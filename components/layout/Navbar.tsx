@@ -129,12 +129,12 @@ export default function Navbar() {
             >
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute z-0 rounded-[2px] bg-applify-amber/80 transition-all duration-300 ease-out"
+                className="pointer-events-none absolute z-0 rounded-[3px] bg-applify-amber/90 transition-all duration-300 ease-out"
                 style={{
                   left: `${highlight.left}px`,
                   width: `${highlight.width}px`,
-                  top: `${highlight.top}px`,
-                  height: `${highlight.height}px`,
+                  top: `${highlight.top + highlight.height * 0.56}px`,
+                  height: `${highlight.height * 0.4}px`,
                   opacity: highlight.opacity,
                 }}
               />
@@ -148,7 +148,7 @@ export default function Navbar() {
                     href={item.href}
                     ref={(el) => setItemRef(item.href, el)}
                     aria-current={active ? "page" : undefined}
-                    className="relative z-10 inline-block px-[3px] py-0 text-base font-semibold leading-none text-black transition-colors duration-200 lg:text-lg"
+                    className="relative z-10 inline-block px-[2px] py-0 text-base font-semibold leading-none text-black transition-colors duration-200 lg:text-lg"
                   >
                     {item.label}
                   </Link>
