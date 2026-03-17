@@ -21,6 +21,10 @@
   background-image: linear-gradient(135deg, #0ca2a6, #008486);
 }
 
+@utility blob {
+  border-radius: 40px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
