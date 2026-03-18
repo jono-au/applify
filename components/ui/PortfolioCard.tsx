@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { ArrowButton } from "@/components/ui/ArrowBtn";
 
 type PortfolioCardProps = {
   title: string;
@@ -67,12 +68,14 @@ export default function PortfolioCard({
           </h3>
         </div>
 
-        <Link
-          href={href}
-          aria-label={`View project: ${title}`}
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-black/15 bg-white text-neutral-900 transition duration-300 hover:-translate-y-0.5 hover:border-applify-amber hover:bg-applify-amber hover:text-white"
-        >
-          <ArrowUpRight className="h-5 w-5" />
+        <Link href={href} aria-label={`View project: ${title}`}>
+          <ArrowButton
+            withBorder
+            size="lg"
+            hoverFill
+            invertOnHover
+            variant="white"
+          />
         </Link>
       </div>
     </article>
