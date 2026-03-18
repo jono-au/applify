@@ -3,25 +3,25 @@ import Container from "@/components/ui/Container";
 
 const services = [
   {
-    title: "Web builds",
+    title: "Website Renovations",
     description:
       "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
     href: "/services",
   },
   {
-    title: "Web Design & Development",
-    description:
-      "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
-    href: "/services",
-  },
-  {
-    title: "Cyber Security",
+    title: "New Website Builds",
     description:
       "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
     href: "/services",
   },
   {
     title: "Essential Care",
+    description:
+      "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
+    href: "/services",
+  },
+  {
+    title: "Integrations & Automation",
     description:
       "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
     href: "/services",
