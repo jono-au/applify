@@ -1,0 +1,104 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
+type Feature = {
+  icon: LucideIcon;
+  text: string;
+};
+
+type SupportCareCardProps = {
+  title: string;
+  eyebrow: string;
+  description: string;
+  features: Feature[];
+  cta: string;
+  href: string;
+  accent: "teal" | "gold";
+};
+
+export default function SupportCareCard({
+  title,
+  eyebrow,
+  description,
+  features,
+  cta,
+  href,
+  accent,
+}: SupportCareCardProps) {
+  const isTeal = accent === "teal";
+
+  return (
+    <article
+      className="
+        group h-full rounded-[32px] border border-black/5 bg-white/90 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+        backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_80px_rgba(0,0,0,0.12)]
+      "
+    >
+      <div className="flex h-full flex-col">
+        <div className="mb-6 flex items-start gap-4">
+          <div
+            className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${
+              isTeal
+                ? "bg-gradient-to-br from-[#0ca2a6]/15 to-[#008486]/20 text-[#008486]"
+                : "bg-gradient-to-br from-[#ffb846]/20 to-[#ff5a00]/10 text-[#ff9a00]"
+            }`}
+          >
+            {isTeal ? (
+              <span className="inline-flex h-6 w-6 rounded-full border-[3px] border-current" />
+            ) : (
+              <span className="inline-flex h-6 w-6 rounded-xl border-[3px] border-current" />
+            )}
+          </div>
+
+          <div>
+            <p className="mb-1 text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+              {eyebrow}
+            </p>
+            <h3 className="text-3xl font-semibold tracking-tight text-black">
+              {title}
+            </h3>
+          </div>
+        </div>
+
+        <p className="mb-6 max-w-[52ch] text-base leading-7 text-black/65">
+          {description}
+        </p>
+
+        <div className="mb-6 h-px w-full bg-black/8" />
+
+        <ul className="mb-8 space-y-4">
+          {features.map(({ icon: Icon, text }) => (
+            <li key={text} className="flex items-start gap-3">
+              <div
+                className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${
+                  isTeal
+                    ? "bg-[#0ca2a6]/10 text-[#008486]"
+                    : "bg-[#ffb846]/20 text-[#ff9a00]"
+                }`}
+              >
+                <Icon className="h-5 w-5" />
+              </div>
+
+              <span className="text-lg leading-7 text-black/80">{text}</span>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-auto">
+          <Link
+            href={href}
+            className={`inline-flex min-h-[56px] items-center justify-center gap-2 rounded-2xl px-6 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 ${
+              isTeal
+                ? "bg-gradient-to-r from-[#0ca2a6] to-[#008486] hover:shadow-[0_16px_35px_rgba(0,132,134,0.28)]"
+                : "bg-gradient-to-r from-[#ffb846] to-[#ff9a00] hover:shadow-[0_16px_35px_rgba(255,154,0,0.28)]"
+            }`}
+          >
+            <span>{cta}</span>
+            <ArrowUpRight className="h-5 w-5" />
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+}
