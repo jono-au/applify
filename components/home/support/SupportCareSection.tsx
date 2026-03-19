@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import Container from "@/components/ui/Container";
-import { ArrowUpRight, MessageCircle } from "lucide-react";
 import SupportCareCard from "./SupportCareCard";
 import { supportPlans } from "@/data/supportCareData";
 

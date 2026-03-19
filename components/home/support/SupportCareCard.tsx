@@ -11,7 +11,7 @@ type SupportCareCardProps = {
   title: string;
   eyebrow: string;
   description: string;
-  features: Feature[];
+  features: readonly Feature[];
   cta: string;
   href: string;
   accent: "teal" | "gold";
