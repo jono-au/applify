@@ -5,6 +5,7 @@ type ArrowButtonProps = {
   variant?: "default" | "white" | "filled" | "ghost";
   size?: "sm" | "md" | "lg";
   iconSize?: "sm" | "md" | "lg";
+  iconColor?: "default" | "white";
   withBorder?: boolean;
   withBgHover?: boolean;
   hoverFill?: boolean;
@@ -16,6 +17,7 @@ export function ArrowButton({
   variant = "default",
   size = "md",
   iconSize,
+  iconColor = "default",
   withBorder = false,
   withBgHover = false,
   hoverFill = false,
@@ -33,6 +35,8 @@ export function ArrowButton({
         size === "sm" && "w-8 h-8",
         size === "md" && "w-11 h-11",
         size === "lg" && "w-14 h-14",
+
+        iconColor === "white" ? "text-white" : "text-neutral-800",
 
         // Border
         withBorder && "border border-neutral-300/80",
