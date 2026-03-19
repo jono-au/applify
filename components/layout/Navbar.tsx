@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Container from "@/components/ui/Container";
+import { ArrowButton } from "@/components/ui/ArrowBtn";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -160,7 +161,7 @@ export default function Navbar() {
               href="/contact"
               className="hidden md:inline-flex items-center rounded-full bg-applify-amber px-6 py-3 text-base font-semibold text-white shadow-sm transition-transform duration-200 hover:scale-[1.02] hover:shadow-md"
             >
-              Contact ↗
+              Contact <ArrowButton size="sm" iconColor="white" />
             </Link>
 
             <button
@@ -220,7 +221,7 @@ export default function Navbar() {
                 href="/contact"
                 className="mt-3 inline-flex w-full items-center justify-center rounded-full bg-applify-amber px-6 py-3 text-base font-semibold text-white shadow-sm transition-transform duration-200 hover:scale-[1.01]"
               >
-                Contact ↗
+                Contact <ArrowButton size="sm" iconColor="white" />
               </Link>
             </nav>
           </div>
