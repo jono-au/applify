@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
+import { ArrowButton } from "@/components/ui/ArrowBtn";
 
 const services = [
   {
@@ -57,16 +58,18 @@ export default function Services() {
               className="group block rounded-[1.75rem] border border-black/[0.03] bg-white shadow-[0_10px_35px_rgba(0,0,0,0.045)] transition-all duration-300 md:hover:-translate-y-[4px] md:hover:border-black/[0.06] md:hover:bg-applify-amber/90 md:hover:shadow-[0_18px_50px_rgba(255,184,70,0.22)] active:scale-[0.985] active:bg-applify-amber/95 active:shadow-[0_6px_18px_rgba(0,0,0,0.08)] active:transition-none"
             >
               <div className="grid gap-5 px-5 py-6 sm:px-6 md:grid-cols-[72px_minmax(0,1fr)_72px] md:items-center md:gap-6 md:px-8 md:py-7 lg:px-10">
-                {/* top row mobile / left icon desktop */}
                 <div className="flex items-center justify-between md:block">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center text-2xl text-black transition-transform duration-300 md:h-16 md:w-16 md:group-hover:-translate-y-0.5 md:group-hover:scale-110">
                     ✦
                   </div>
-
-                  {/* mobile arrow */}
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-black/25 text-xl text-black/50 transition-all duration-300 group-active:translate-x-0.5 group-active:-translate-y-0.5 group-active:border-black/40 group-active:bg-white/30 group-active:text-black md:hidden">
-                    ↗
-                  </div>
+                  <ArrowButton
+                    className="md:hidden"
+                    withBorder
+                    size="lg"
+                    hoverFill
+                    invertOnHover
+                    variant="white"
+                  />
                 </div>
 
                 {/* content */}
@@ -82,9 +85,7 @@ export default function Services() {
 
                 {/* desktop arrow */}
                 <div className="hidden shrink-0 md:flex md:justify-end">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full border border-black/30 text-xl text-black/50 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:border-black/40 group-hover:bg-white/25 group-hover:text-black group-hover:shadow-[0_8px_20px_rgba(255,255,255,0.18)]">
-                    ↗
-                  </div>
+                  <ArrowButton withBorder size="lg" variant="white" />
                 </div>
               </div>
             </Link>
