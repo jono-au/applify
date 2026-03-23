@@ -94,9 +94,7 @@ export default function Footer() {
           </nav>
 
           {/* COPYRIGHT */}
-          <p className="text-sm text-white/60">
-            ©2025 Applify Group | ABN 66 675 900 982 | ACN 675 900 982
-          </p>
+          <p className="text-sm text-white/60">©2025 Applify Group</p>
         </div>
       </Container>
     </footer>
