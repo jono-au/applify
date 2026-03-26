@@ -4,6 +4,7 @@ import Portfolio from "@/components/home/Portfolio";
 import ImageBreak from "@/components/home/ImageBreak";
 import SupportCareSection from "@/components/home/support/SupportCareSection";
 import Footer from "@/components/layout/Footer";
+import CTABanner from "@/components/home/CtaBanner";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function Page() {
       <Portfolio />
       <ImageBreak imageSrc="/images/image-break.webp" />
       <SupportCareSection />
+      <CTABanner />
       <Footer />
     </main>
   );
