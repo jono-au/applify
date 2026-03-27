@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import InternalPageHero from "@/components/ui/InternalPageHero";
+import ContactSection from "@/components/contact/ContactSection";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -17,7 +18,7 @@ export default function ContactPage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
 
-      {/* Rest of contact page */}
+      <ContactSection />
     </>
   );
 }
