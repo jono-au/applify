@@ -1,9 +1,9 @@
 "use client";
 
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone, LucideProps } from "lucide-react";
 
 type ContactItem = {
-  icon: React.ComponentType<{ className?: string }>;
+  icon: React.ComponentType<LucideProps>;
   title: string;
   lines: string[];
 };
