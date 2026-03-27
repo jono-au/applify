@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import InternalPageHero from "@/components/ui/InternalPageHero";
 import ContactSection from "@/components/contact/ContactSection";
+import MapSection from "@/components/contact/MapSection";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -19,6 +21,8 @@ export default function ContactPage() {
       />
 
       <ContactSection />
+      <MapSection />
+      <Footer />
     </>
   );
 }
