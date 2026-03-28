@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import InternalPageHero from "@/components/ui/InternalPageHero";
 import ServicesSplitSection from "@/components/services/ServicesSplitSection";
+import CTABanner from "@/components/home/CtaBanner";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Website Renovations, New Builds & Ongoing Care",
@@ -18,6 +20,8 @@ export default function ServicesPage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
       />
       <ServicesSplitSection />
+      <CTABanner />
+      <Footer />
     </>
   );
 }
