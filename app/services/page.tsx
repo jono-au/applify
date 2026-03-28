@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import InternalPageHero from "@/components/ui/InternalPageHero";
 
 export const metadata: Metadata = {
   title: "Website Renovations, New Builds & Ongoing Care",
@@ -8,8 +9,11 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <main className="p-10">
-      <h1>Services page</h1>
-    </main>
+    <InternalPageHero
+      title="Our Services"
+      highlightText="Services"
+      description="We craft results-driven digital strategies that turn vision into measurable impact."
+      breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
+    />
   );
 }
