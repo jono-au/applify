@@ -37,7 +37,8 @@ export default function PricingBlock({
   const rightFeatures = features.slice(midpoint);
 
   return (
-    <section className={clsx("py-20 lg:py-28", muted && "bg-[#f3f3f3]")}>
+    <section className={clsx("py-16 lg:py-20", muted && "bg-[#f3f3f3]")}>
+      {" "}
       <Container>
         <div className="mx-auto w-full">
           {eyebrow && (
@@ -46,18 +47,19 @@ export default function PricingBlock({
             </p>
           )}
 
-          <h2 className="mx-auto mb-10 max-w-[820px] text-center text-4xl font-semibold leading-tight tracking-[-0.04em] text-[#0f0f10] sm:mb-12 sm:text-5xl lg:mb-14 lg:text-6xl">
+          <h2 className="mx-auto mb-8 max-w-[820px] text-center text-4xl font-semibold leading-tight tracking-[-0.04em] text-[#0f0f10] sm:mb-10 sm:text-5xl lg:mb-12 lg:text-6xl">
             {heading}
           </h2>
 
-          <div className="grid items-start gap-8 lg:grid-cols-[1fr_1.08fr] lg:items-center lg:gap-16">
+          <div className="grid items-start gap-6 lg:grid-cols-[1fr_1.08fr] lg:items-center lg:gap-12">
+            {" "}
             <div
               className={clsx(
-                "order-2 space-y-8 lg:space-y-0",
+                "order-2 space-y-6 lg:space-y-0",
                 reverse ? "lg:order-2" : "lg:order-1",
               )}
             >
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex items-start justify-between gap-3">
                 <div className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
                   <Image
                     src={icon}
@@ -84,11 +86,11 @@ export default function PricingBlock({
                   </p>
                 </div>
 
-                <p className="max-w-[620px] text-base leading-7 text-[#3e3e42] sm:text-lg">
+                <p className="mt-4 max-w-[600px] text-base leading-7 text-[#3e3e42] sm:text-lg">
                   {description}
                 </p>
 
-                <div className="mt-8 grid gap-x-10 gap-y-3 sm:grid-cols-2">
+                <div className="mt-6 grid gap-x-8 gap-y-2.5 sm:grid-cols-2">
                   <ul className="space-y-3">
                     {leftFeatures.map((feature) => (
                       <li
@@ -114,7 +116,7 @@ export default function PricingBlock({
                   </ul>
                 </div>
 
-                <div className="mt-9">
+                <div className="mt-7">
                   <Link
                     href="/contact"
                     className="group inline-flex items-center gap-2 rounded-full border border-[#0f0f10]/20 bg-white px-5 py-3 text-sm font-medium text-[#0f0f10] transition-all duration-300 hover:border-[#0f0f10] hover:bg-[#0f0f10] hover:text-white"
@@ -125,7 +127,6 @@ export default function PricingBlock({
                 </div>
               </div>
             </div>
-
             <div
               className={clsx("order-1", reverse ? "lg:order-1" : "lg:order-2")}
             >
@@ -141,7 +142,7 @@ export default function PricingBlock({
             </div>
           </div>
 
-          <div className="mt-8 lg:hidden">
+          <div className="mt-6 lg:hidden">
             <p className="text-base leading-7 text-[#3e3e42] sm:text-lg">
               {description}
             </p>
@@ -172,7 +173,7 @@ export default function PricingBlock({
               </ul>
             </div>
 
-            <div className="mt-9">
+            <div className="mt-7">
               <Link
                 href="/contact"
                 className="group inline-flex items-center gap-2 rounded-full border border-[#0f0f10]/20 bg-white px-5 py-3 text-sm font-medium text-[#0f0f10] transition-all duration-300 hover:border-[#0f0f10] hover:bg-[#0f0f10] hover:text-white"
