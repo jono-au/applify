@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import InternalPageHero from "@/components/ui/InternalPageHero";
 import PricingSections from "@/components/pricing/PricingSections";
 import Footer from "@/components/layout/Footer";
+import CTABanner from "@/components/home/CtaBanner";
 
 export const metadata: Metadata = {
   title: "Website Pricing & Care Plans",
@@ -19,6 +20,7 @@ export default function PricingPage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Pricing" }]}
       />
       <PricingSections />
+      <CTABanner />
       <Footer />
     </>
   );
