@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import InternalPageHero from "@/components/ui/InternalPageHero";
+import PricingSections from "@/components/pricing/PricingSections";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function PricingPage() {
         description="Clear pricing for website renovations, new builds and ongoing website care from Applify."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Pricing" }]}
       />
+      <PricingSections />
       <Footer />
     </>
   );
