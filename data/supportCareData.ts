@@ -10,9 +10,9 @@ import {
 export const supportPlans = [
   {
     title: "Ad-hoc Support",
-    eyebrow: "Flexible help when needed",
+    eyebrow: "Help when you need it",
     description:
-      "Perfect for small updates, fixes, landing pages, and one-off technical jobs without committing to ongoing care.",
+      "Fast and reliable help for any project. Perfect for fixes, improvements, and on demand work.",
     features: [
       {
         icon: Wrench,
@@ -20,11 +20,11 @@ export const supportPlans = [
       },
       {
         icon: PlugZap,
-        text: "Integrations & small improvements",
+        text: "Integrations & improvements",
       },
       {
         icon: LifeBuoy,
-        text: "Hourly support for one-off work",
+        text: "Landing pages & one off projects",
       },
     ],
     cta: "Get Ad-hoc Support",
@@ -35,7 +35,7 @@ export const supportPlans = [
     title: "Essential Care",
     eyebrow: "Ongoing support & protection",
     description:
-      "For businesses that need reliable maintenance, monitoring, backups, security, and support to keep their website running smoothly.",
+      "No stress. We handle everything so you don't have to worry about the technical stuff.",
     features: [
       {
         icon: Activity,
@@ -43,14 +43,14 @@ export const supportPlans = [
       },
       {
         icon: HardDriveDownload,
-        text: "Backups & uptime checks",
+        text: "Daily backups & uptime checks",
       },
       {
         icon: ShieldCheck,
-        text: "Security, hosting & support",
+        text: "Security, hosting & direct support",
       },
     ],
-    cta: "Get Essential Care",
+    cta: "Start Essential Care",
     href: "/contact",
     accent: "gold",
   },
