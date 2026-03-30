@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import InternalPageHero from "@/components/ui/InternalPageHero";
 import AboutIntro from "@/components/about/AboutIntro";
 import WhyApplify from "@/components/about/WhyApplify";
+import ImageBreak from "@/components/ui/ImageBreak";
 import CTABanner from "@/components/home/CtaBanner";
 import Footer from "@/components/layout/Footer";
 
@@ -23,6 +24,7 @@ export default function AboutPage() {
 
       <AboutIntro />
       <WhyApplify />
+      <ImageBreak imageSrc="/images/image-break.webp" />
       <CTABanner />
       <Footer />
     </>
