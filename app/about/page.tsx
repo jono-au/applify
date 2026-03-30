@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import InternalPageHero from "@/components/ui/InternalPageHero";
+import CTABanner from "@/components/home/CtaBanner";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Websites | No Agency Nonsense.",
@@ -8,8 +11,16 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="p-10">
-      <h1>About page</h1>
-    </main>
+    <>
+      <InternalPageHero
+        title="About Us"
+        highlightText="Us"
+        description="We craft results-driven digital strategies that turn vision into measurable impact."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
+      />
+
+      <CTABanner />
+      <Footer />
+    </>
   );
 }
