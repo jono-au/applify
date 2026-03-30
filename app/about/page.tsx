@@ -5,7 +5,7 @@ import WhyApplify from "@/components/about/WhyApplify";
 import ImageBreak from "@/components/ui/ImageBreak";
 import TeamSection from "@/components/about/TeamSection";
 
-import CTABanner from "@/components/home/CtaBanner";
+import CTABanner from "@/components/ui/CtaBanner";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {

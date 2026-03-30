@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import InternalPageHero from "@/components/ui/InternalPageHero";
 import ServicesSplitSection from "@/components/services/ServicesSplitSection";
-import CTABanner from "@/components/home/CtaBanner";
+import CTABanner from "@/components/ui/CtaBanner";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {

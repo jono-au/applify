@@ -4,7 +4,7 @@ import Portfolio from "@/components/home/Portfolio";
 import ImageBreak from "@/components/ui/ImageBreak";
 import SupportCareSection from "@/components/home/support/SupportCareSection";
 import Footer from "@/components/layout/Footer";
-import CTABanner from "@/components/home/CtaBanner";
+import CTABanner from "@/components/ui/CtaBanner";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
