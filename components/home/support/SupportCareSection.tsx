@@ -5,11 +5,10 @@ import { supportPlans } from "@/data/supportCareData";
 
 export default function SupportCareSection() {
   return (
-    <section className="relative overflow-hidden bg-[#f6f4f1] py-24 md:py-32">
+    <section className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute left-[-120px] top-24 h-72 w-72 rounded-full bg-[#ffb846]/12 blur-3xl" />
         <div className="absolute right-[-120px] top-16 h-80 w-80 rounded-full bg-[#0ca2a6]/10 blur-3xl" />
-        <div className="absolute bottom-[-100px] left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[#ff5a00]/8 blur-3xl" />
       </div>
 
       <Container className="relative z-10">
