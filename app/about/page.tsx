@@ -3,6 +3,8 @@ import InternalPageHero from "@/components/ui/InternalPageHero";
 import AboutIntro from "@/components/about/AboutIntro";
 import WhyApplify from "@/components/about/WhyApplify";
 import ImageBreak from "@/components/ui/ImageBreak";
+import TeamSection from "@/components/about/TeamSection";
+
 import CTABanner from "@/components/home/CtaBanner";
 import Footer from "@/components/layout/Footer";
 
@@ -25,6 +27,25 @@ export default function AboutPage() {
       <AboutIntro />
       <WhyApplify />
       <ImageBreak imageSrc="/images/image-break.webp" />
+      <TeamSection
+        eyebrow="Meet Applify"
+        title="Meet the people behind the work"
+        highlightText="people"
+        members={[
+          {
+            name: "Jonathan Chan",
+            role: "Solutions Architect & Developer",
+            imageSrc: "/images/about/team-jonathan.jpg",
+            imageAlt: "Jonathan Chan portrait",
+          },
+          {
+            name: "Noor Rasoul",
+            role: "Operations & Strategy Partner",
+            imageSrc: "/images/about/team-jonathan.jpg",
+            imageAlt: "Applify representative portrait",
+          },
+        ]}
+      />
       <CTABanner />
       <Footer />
     </>
