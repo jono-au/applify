@@ -61,7 +61,7 @@ export default function SupportCareCard({
           </div>
         </div>
 
-        <p className="mb-6 max-w-[52ch] text-base leading-7 text-black/65">
+        <p className="mb-6 max-w-[52ch] text-lg leading-7 text-black/65">
           {description}
         </p>
 
