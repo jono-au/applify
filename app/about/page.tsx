@@ -38,12 +38,6 @@ export default function AboutPage() {
             imageSrc: "/images/about/team-jonathan.jpg",
             imageAlt: "Jonathan Chan portrait",
           },
-          {
-            name: "Noor Rasoul",
-            role: "Operations & Strategy Partner",
-            imageSrc: "/images/about/team-jonathan.jpg",
-            imageAlt: "Applify representative portrait",
-          },
         ]}
       />
       <CTABanner />
