@@ -34,23 +34,8 @@ export default function TeamSection({
           </p>
 
           <h2 className="mt-5 text-[2.4rem] font-semibold leading-[0.96] tracking-[-0.045em] text-[#0f0f10] sm:text-[3.25rem] lg:text-[4.8rem]">
-            {titleParts.map((part, index) => {
-              const isHighlight =
-                part.toLowerCase() === highlightText.toLowerCase();
-
-              if (!isHighlight) {
-                return <span key={`${part}-${index}`}>{part}</span>;
-              }
-
-              return (
-                <span
-                  key={`${part}-${index}`}
-                  className="relative inline-block"
-                >
-                  <span className="relative z-10">{part}</span>
-                  <span className="absolute inset-x-0 bottom-[0.08em] z-0 h-[0.32em] rounded-sm bg-[#ffb846]" />
-                </span>
-              );
+            {titleParts.map((part) => {
+              return <span>{part}</span>;
             })}
           </h2>
         </div>
