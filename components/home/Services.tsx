@@ -1,30 +1,31 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { ArrowButton } from "@/components/ui/ArrowBtn";
+import HighlightText from "@/components/ui/HighlightText";
 
 const services = [
   {
-    title: "Website Renovations",
+    title: "Website Upgrades",
     description:
-      "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
+      "Turn your existing website into a fast, high performing asset. We clean up the tech, improve performance and rebuild what's holding you back so your site actually converts.",
     href: "/services",
   },
   {
-    title: "New Website Builds",
+    title: "New Websites",
     description:
-      "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
+      "Custom WordPress and Shopify websites built from the ground up. Clean, scalable and easy to manage, designed to grow with your business.",
     href: "/services",
   },
   {
-    title: "Essential Care",
+    title: "Ongoing Care",
     description:
-      "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
+      "Keep your website secure, up to date and performing at its best. Ongoing care with priority support so you can focus on running your business.",
     href: "/services",
   },
   {
     title: "Integrations & Automation",
     description:
-      "Modern, responsive websites tailored to your brand and goals. We build fast, user-friendly sites that drive engagement and conversions.",
+      "Connect your systems and automate work slowing you down. We streamline your processes, reduce manual tasks and build efficient workflows that scale with your business.",
     href: "/services",
   },
 ];
@@ -39,14 +40,8 @@ export default function Services() {
           </p>
 
           <h2 className="mt-3 text-[2.35rem] font-bold leading-[1.05] tracking-[-0.03em] text-black sm:text-[2.8rem] md:text-5xl lg:text-[4rem] lg:leading-[1.05]">
-            Explore Our Full Range of
-            <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>
-            Expert Digital{" "}
-            <span className="relative inline-block leading-none">
-              <span className="relative z-10">Services</span>
-              <span className="absolute inset-x-0 top-[0.55em] h-[0.55em] -z-0 rounded-[3px] bg-applify-amber" />
-            </span>
+            Everything you need to build, run and{" "}
+            <HighlightText> grow online</HighlightText>
           </h2>
         </div>
 
@@ -55,7 +50,7 @@ export default function Services() {
             <Link
               key={service.title}
               href={service.href}
-              className="group block rounded-[1.75rem] border border-black/[0.03] bg-white shadow-[0_10px_35px_rgba(0,0,0,0.045)] transition-all duration-300 md:hover:-translate-y-[4px] md:hover:border-black/[0.06] md:hover:bg-applify-amber/90 md:hover:shadow-[0_18px_50px_rgba(255,184,70,0.22)] active:scale-[0.985] active:bg-applify-amber/95 active:shadow-[0_6px_18px_rgba(0,0,0,0.08)] active:transition-none"
+              className="group block rounded-[1.75rem] border border-black/[0.03] bg-white shadow-[0_10px_35px_rgba(0,0,0,0.045)] transition-all duration-300 md:hover:-translate-y-[4px] md:hover:border-black/[0.06] md:hover:bg-applify-amber/90 md:hover:shadow-[0_18px_50px_rgba(255,184,70,0.22)] active:scale-[0.985] active:bg-gray-100 active:shadow-[0_6px_18px_rgba(0,0,0,0.08)] active:transition-none"
             >
               <div className="grid gap-5 px-5 py-6 sm:px-6 md:grid-cols-[72px_minmax(0,1fr)_72px] md:items-center md:gap-6 md:px-8 md:py-7 lg:px-10">
                 <div className="flex items-center justify-between md:block">
