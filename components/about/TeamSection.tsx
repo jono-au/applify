@@ -28,15 +28,13 @@ export default function TeamSection({
   return (
     <section className="py-20 sm:py-24 lg:py-28">
       <Container>
-        <div className="mx-auto max-w-[980px] text-center">
+        <div className="mx-auto max-w-[680px] text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0f0f10]/70">
             {eyebrow}
           </p>
 
           <h2 className="mt-5 text-[2.4rem] font-semibold leading-[0.96] tracking-[-0.045em] text-[#0f0f10] sm:text-[3.25rem] lg:text-[4.8rem]">
-            {titleParts.map((part) => {
-              return <span>{part}</span>;
-            })}
+            {title}
           </h2>
         </div>
 
