@@ -20,7 +20,7 @@ export default function AboutPage() {
       <InternalPageHero
         title="About Us"
         highlightText="Us"
-        description="We build digital experiences that drive real results. Strategy. Execution. Performance. Done right."
+        description="We build digital experiences that drive real results."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
 

@@ -8,27 +8,27 @@ import {
 
 const pillars = [
   {
-    title: "Senior-Led Delivery",
+    title: "Senior Led",
     description:
-      "You work directly with experienced people who understand strategy, design and development — not bloated layers, handovers or account-manager fluff.",
+      "Work directly with experienced developers who understand strategy, design and development - no layers, no handovers, no account manager fluff.",
     Icon: BadgeCheck,
   },
   {
     title: "Built to Scale",
     description:
-      "From brochure sites to custom platforms and integrations, we build with performance, flexibility and future growth in mind from day one.",
+      "From simple websites to custom platforms and integrations, everything we build is designed for performance, flexibility and future growth from day one.",
     Icon: Blocks,
   },
   {
     title: "Clear Communication",
     description:
-      "We keep things straightforward, collaborative and easy to follow, so you always know what’s happening, what matters and what comes next.",
+      "We keep things straightforward, collaborative and easy to follow, so you always know what's happening, what matters and what comes next.",
     Icon: MessagesSquare,
   },
   {
-    title: "User-First Thinking",
+    title: "User First Thinking",
     description:
-      "Everything we create is shaped around usability, clarity and real business outcomes — helping your website do more than just look good.",
+      "Everything we build is easy to use, clear and focused on real business outcomes. Built for real users, with your business in mind.",
     Icon: UserRoundSearch,
   },
 ] as const;
@@ -41,7 +41,7 @@ type WhyApplifyProps = {
 
 export default function WhyApplify({
   eyebrow = "Why Applify",
-  title = "Our commitment to clear, practical digital solutions",
+  title = "Strategy, execution and performance. Done right.",
   highlightText = "digital solutions",
 }: WhyApplifyProps) {
   const titleParts = title.split(
