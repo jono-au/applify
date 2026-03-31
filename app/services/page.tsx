@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <InternalPageHero
         title="Our Services"
         highlightText="Services"
-        description="We craft results-driven digital strategies that turn vision into measurable impact."
+        description="Just smart digital solutions that deliver results."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
       />
       <ServicesSplitSection />
