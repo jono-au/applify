@@ -17,14 +17,12 @@ type AboutIntroProps = {
 
 export default function AboutIntro({
   eyebrow = "Who We Are",
-  title = "Helping businesses grow with smart digital experiences",
-  highlightText = "smart digital experiences",
-  description = "At Applify, we help Australian businesses build websites, digital tools and online experiences that feel polished, perform properly and support real growth. We focus on clear communication, practical strategy and senior-led delivery from start to finish.",
-  secondaryDescription = "Whether you need a stronger online presence, a better user journey or custom functionality behind the scenes, we build solutions that are designed to work in the real world — not just look good in a mock-up.",
+  title = "Helping Australian businesses connect with and serve more customers online.",
+  highlightText = "digital experiences",
+  description = "We build custom websites and digital solutions designed support long term growth. Every project is led by a senior developer, with clear communication and practical thinking from start to finish.",
+  secondaryDescription = "Whether it's improving your online presence, refining the user journey, or building custom functionality, we focus on solutions that work in the real world.",
   imageSrc = "/images/about/about-team.png",
   imageAlt = "Applify team collaborating around a computer",
-  ctaLabel = "Learn More",
-  ctaHref = "/contact",
 }: AboutIntroProps) {
   const titleParts = title.split(
     new RegExp(`(${escapeRegExp(highlightText)})`, "gi"),
@@ -56,7 +54,7 @@ export default function AboutIntro({
               {eyebrow}
             </p>
 
-            <h2 className="max-w-[12ch] text-[2.5rem] font-semibold leading-[0.96] tracking-[-0.04em] text-[#0f0f10] sm:text-[3.25rem] lg:text-[4.4rem]">
+            <h2 className="text-[2.5rem] font-semibold leading-[0.96] tracking-[-0.04em] text-[#0f0f10] sm:text-[3.25rem] lg:text-[4.4rem]">
               {titleParts.map((part, index) => {
                 const isHighlight =
                   part.toLowerCase() === highlightText.toLowerCase();
@@ -80,16 +78,6 @@ export default function AboutIntro({
             <div className="mt-8 space-y-5 text-base leading-8 text-[#0f0f10]/72 sm:text-lg">
               <p>{description}</p>
               <p>{secondaryDescription}</p>
-            </div>
-
-            <div className="mt-10">
-              <Link
-                href={ctaHref}
-                className="group inline-flex items-center gap-3 rounded-full border border-[#0f0f10]/20 bg-white px-6 py-3 text-sm font-semibold text-[#0f0f10] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#0f0f10] hover:shadow-[0_12px_30px_rgba(15,15,16,0.08)]"
-              >
-                <span>{ctaLabel}</span>
-                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </Link>
             </div>
           </div>
         </div>
