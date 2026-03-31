@@ -28,13 +28,12 @@ export default function AboutPage() {
       <WhyApplify />
       <ImageBreak imageSrc="/images/image-break.webp" />
       <TeamSection
-        eyebrow="Meet Applify"
-        title="Meet the people behind the work"
-        highlightText="people"
+        eyebrow="Nice to meet you"
+        title="I love working with great people"
         members={[
           {
             name: "Jonathan Chan",
-            role: "Solutions Architect & Developer",
+            role: "Senior Consultant & Developer",
             imageSrc: "/images/about/team-jonathan.jpg",
             imageAlt: "Jonathan Chan portrait",
           },
