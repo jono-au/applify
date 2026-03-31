@@ -26,24 +26,24 @@ export default function PortfolioCard({
 }: PortfolioCardProps) {
   return (
     <article className={cn("group w-full", wrapperClassName)}>
-      <Link href={href} className="block focus:outline-none">
-        <div
-          className={cn(
-            "relative w-full overflow-hidden rounded-[2rem] bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition duration-300 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_18px_45px_rgba(0,0,0,0.10)]",
-            "aspect-[1.08/0.88]",
-            imageClassName,
-          )}
-        >
-          <Image
-            src={image}
-            alt={title}
-            fill
-            sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 600px"
-            className="object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
-            priority={false}
-          />
-        </div>
-      </Link>
+      {/* <Link href={href} className="block focus:outline-none"> */}
+      <div
+        className={cn(
+          "relative w-full overflow-hidden rounded-[2rem] bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition duration-300 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_18px_45px_rgba(0,0,0,0.10)]",
+          "aspect-[1.08/0.88]",
+          imageClassName,
+        )}
+      >
+        <Image
+          src={image}
+          alt={title}
+          fill
+          sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 600px"
+          className="object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
+          priority={false}
+        />
+      </div>
+      {/* </Link> */}
 
       <div className="mt-5 flex items-end justify-between gap-4">
         <div className="min-w-0">
@@ -59,16 +59,17 @@ export default function PortfolioCard({
           </div>
 
           <h3 className="text-2xl font-semibold leading-tight tracking-tight text-neutral-950 sm:text-[2rem]">
-            <Link
+            {/* <Link
               href={href}
               className="transition-colours hover:text-neutral-700 focus:outline-none"
             >
               {title}
-            </Link>
+            </Link> */}
+            {title}
           </h3>
         </div>
 
-        <Link href={href} aria-label={`View project: ${title}`}>
+        {/* <Link href={href} aria-label={`View project: ${title}`}>
           <ArrowButton
             withBorder
             size="lg"
@@ -76,7 +77,7 @@ export default function PortfolioCard({
             invertOnHover
             variant="white"
           />
-        </Link>
+        </Link> */}
       </div>
     </article>
   );
