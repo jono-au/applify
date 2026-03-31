@@ -28,9 +28,9 @@ export default function SupportCareSection() {
             </h2>
 
             <p className="mt-8 max-w-[62ch] text-lg leading-8 text-black/65 md:text-xl">
-              Keep your website secure, updated and performing at its best with
-              fast, reliable support. Whether you need one-off help or ongoing
-              care, we make it easy to stay online and moving forward.
+              Keep your website secure, updated, and performing at its best with
+              fast, reliable support. We handle the technical side so you can
+              focus on running your business.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 text-sm font-medium text-black/60">
@@ -38,10 +38,10 @@ export default function SupportCareSection() {
                 Fast turnaround
               </span>
               <span className="rounded-full border border-black/10 bg-white/70 px-4 py-2">
-                Australian support
+                Australian based
               </span>
               <span className="rounded-full border border-black/10 bg-white/70 px-4 py-2">
-                Security-first care
+                Senior developer
               </span>
             </div>
           </div>
