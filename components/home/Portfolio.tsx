@@ -11,24 +11,18 @@ export default function PortfolioSection() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-7">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-neutral-600">
-              Digital Showcase
+              Our Work
             </p>
 
             <h2 className="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
-              Our{" "}
-              <span className="relative inline-block">
-                <span className="relative z-10">Portfolio</span>
-                <span className="absolute bottom-[0.18em] left-0 z-0 h-[0.28em] w-full rounded-sm bg-[#ffb846]" />
-              </span>{" "}
-              of Expert Digital Solutions
+              Projects we've been proud to work on.
             </h2>
           </div>
 
           <div className="lg:col-span-5 lg:pl-8">
             <p className="max-w-md text-base leading-8 text-neutral-600 sm:text-lg">
-              Explore our curated portfolio showcasing innovative digital
-              solutions. See how we bring creativity and technology together to
-              drive success.
+              High performance, reliable websites built to support your business
+              around the clock.
             </p>
           </div>
         </div>
