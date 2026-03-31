@@ -73,7 +73,7 @@ export default function Services() {
                     {service.title}
                   </h3>
 
-                  <p className="mt-3 max-w-[42ch] text-lg leading-[1.55] text-black/60 transition-colors duration-300 md:text-[1.06rem] md:group-hover:text-black/75">
+                  <p className="mt-3 text-lg leading-[1.55] text-black/60 transition-colors duration-300 md:text-[1.06rem] md:group-hover:text-black/75">
                     {service.description}
                   </p>
                 </div>
