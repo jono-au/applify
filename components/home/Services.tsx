@@ -40,8 +40,7 @@ export default function Services() {
           </p>
 
           <h2 className="mt-3 text-[2.35rem] font-bold leading-[1.05] tracking-[-0.03em] text-black sm:text-[2.8rem] md:text-5xl lg:text-[4rem] lg:leading-[1.05]">
-            Everything you need to build, run and{" "}
-            <HighlightText> grow online</HighlightText>
+            Everything you need to build, run and grow online.
           </h2>
         </div>
 
