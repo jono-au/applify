@@ -6,6 +6,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Container from "@/components/ui/Container";
 import { ArrowButton } from "@/components/ui/ArrowBtn";
+import CTAButton from "../ui/CtaButton";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -157,12 +158,9 @@ export default function Navbar() {
               })}
             </nav>
 
-            <Link
-              href="/contact"
-              className="hidden md:inline-flex items-center rounded-full bg-applify-amber px-6 py-3 text-base font-semibold text-white shadow-sm transition-transform duration-200 hover:scale-[1.02] hover:shadow-md"
-            >
-              Contact <ArrowButton size="sm" iconColor="white" />
-            </Link>
+            <div className="hidden md:block">
+              <CTAButton href="/contact">Contact</CTAButton>
+            </div>
 
             <button
               type="button"
@@ -216,13 +214,9 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-
-              <Link
-                href="/contact"
-                className="mt-3 inline-flex w-full items-center justify-center rounded-full bg-applify-amber px-6 py-3 text-base font-semibold text-white shadow-sm transition-transform duration-200 hover:scale-[1.01]"
-              >
-                Contact <ArrowButton size="sm" iconColor="white" />
-              </Link>
+              <CTAButton href="/contact" className="hidden md:inline-flex">
+                Contact
+              </CTAButton>
             </nav>
           </div>
         </div>
