@@ -1,4 +1,3 @@
-//
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
@@ -6,8 +5,9 @@ import Container from "@/components/ui/Container";
 import { ArrowUpRight } from "lucide-react";
 
 type PricingBlockProps = {
-  eyebrow?: string;
+  eyebrow: string;
   heading: string;
+  title: string;
   description: string;
   price: string;
   features: string[];
@@ -22,6 +22,7 @@ type PricingBlockProps = {
 export default function PricingBlock({
   eyebrow,
   heading,
+  title,
   description,
   price,
   features,
@@ -78,7 +79,7 @@ export default function PricingBlock({
               <div className="hidden lg:block">
                 <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                   <h3 className="text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#0f0f10] sm:text-4xl">
-                    {heading}
+                    {title}
                   </h3>
 
                   <p className="text-base font-semibold text-[#0f0f10] sm:shrink-0">
