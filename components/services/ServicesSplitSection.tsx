@@ -1,90 +1,3 @@
-// import Container from "@/components/ui/Container";
-// import { Megaphone, MonitorSmartphone } from "lucide-react";
-// import ServiceSplitBlock from "./ServiceSplitBlock";
-// import ServiceIconWrap from "./ServiceIconWrap";
-
-// const services = [
-//   {
-//     title: "Website Renovations",
-//     description:
-//       "We create data-driven digital marketing strategies that help you attract the right audience, increase engagement, and drive measurable growth. From content and SEO to paid media and analytics, we build campaigns that support real business outcomes.",
-//     imageSrc: "/images/services/digital-marketing.png",
-//     imageAlt:
-//       "Team reviewing digital marketing dashboards on a desktop monitor",
-//     href: "/services/website-renovations",
-//     reverse: false,
-//     features: [
-//       {
-//         text: "Search Engine Optimisation (SEO)",
-//         dotClassName: "bg-[#ff5a00]",
-//       },
-//       {
-//         text: "Content & Social Media Marketing",
-//         dotClassName: "bg-[#ffb846]",
-//       },
-//     ],
-//     icon: (
-//       <ServiceIconWrap>
-//         <Megaphone className="h-8 w-8" strokeWidth={1.8} />
-//       </ServiceIconWrap>
-//     ),
-//   },
-//   {
-//     title: "New Website Builds",
-//     description:
-//       "We design and build high-performing websites that are as functional as they are visually compelling. Whether you need a sleek marketing site or a more tailored digital platform, we combine thoughtful design with clean, scalable code.",
-//     imageSrc: "/images/services/web-design-development.png",
-//     imageAlt: "Designer working on a website layout across multiple screens",
-//     href: "/services/new-website-builds",
-//     reverse: true,
-//     features: [
-//       { text: "Custom Website Design", dotClassName: "bg-[#0ca2a6]" },
-//       { text: "Responsive Development", dotClassName: "bg-[#008486]" },
-//     ],
-//     icon: (
-//       <ServiceIconWrap>
-//         <MonitorSmartphone className="h-8 w-8" strokeWidth={1.8} />
-//       </ServiceIconWrap>
-//     ),
-//   },
-// ];
-
-// export default function ServicesSplitSection() {
-//   return (
-//     <section className="py-20 sm:py-24 lg:py-32">
-//       <Container>
-//         <div className="space-y-20 sm:space-y-24 lg:space-y-32">
-//           {services.map((service, index) => {
-//             const isAlt = index % 2 === 1;
-
-//             return (
-//               <div
-//                 key={service.title}
-//                 className={
-//                   isAlt
-//                     ? "lg:bg-[#f6f6f3] lg:rounded-[32px] lg:px-10 lg:py-20"
-//                     : ""
-//                 }
-//               >
-//                 <ServiceSplitBlock
-//                   title={service.title}
-//                   description={service.description}
-//                   imageSrc={service.imageSrc}
-//                   imageAlt={service.imageAlt}
-//                   href={service.href}
-//                   features={service.features}
-//                   reverse={service.reverse}
-//                   icon={service.icon}
-//                 />
-//               </div>
-//             );
-//           })}
-//         </div>
-//       </Container>
-//     </section>
-//   );
-// }
-
 import Container from "@/components/ui/Container";
 import { Megaphone, MonitorSmartphone } from "lucide-react";
 import ServiceSplitBlock from "./ServiceSplitBlock";
@@ -94,7 +7,7 @@ const services = [
   {
     title: "Website Renovations",
     description:
-      "We create data-driven digital marketing strategies that help you attract the right audience, increase engagement, and drive measurable growth. From content and SEO to paid media and analytics, we build campaigns that support real business outcomes.",
+      "We refine and rebuild the parts of your website that matter most. From structure and speed to usability and conversion, every improvement is focused on making your site easier to use and more effective at turning visitors into customers.",
     imageSrc: "/images/services/digital-marketing.png",
     imageAlt:
       "Team reviewing digital marketing dashboards on a desktop monitor",
@@ -102,11 +15,19 @@ const services = [
     reverse: false,
     features: [
       {
-        text: "Search Engine Optimisation (SEO)",
+        text: "UX & Conversion Improvements",
         dotClassName: "bg-[#ff5a00]",
       },
       {
-        text: "Content & Social Media Marketing",
+        text: "Page Structure & Content Flow",
+        dotClassName: "bg-[#ff5a00]",
+      },
+      {
+        text: "Speed & Core Web Vitals",
+        dotClassName: "bg-[#ff5a00]",
+      },
+      {
+        text: "Technical Cleanup & Code Optimisation",
         dotClassName: "bg-[#ffb846]",
       },
     ],
@@ -117,7 +38,7 @@ const services = [
     ),
   },
   {
-    title: "New Website Builds",
+    title: "Custom Websites",
     description:
       "We design and build high-performing websites that are as functional as they are visually compelling. Whether you need a sleek marketing site or a more tailored digital platform, we combine thoughtful design with clean, scalable code.",
     imageSrc: "/images/services/web-design-development.png",
@@ -125,8 +46,54 @@ const services = [
     href: "/services/new-website-builds",
     reverse: true,
     features: [
-      { text: "Custom Website Design", dotClassName: "bg-[#0ca2a6]" },
-      { text: "Responsive Development", dotClassName: "bg-[#008486]" },
+      {
+        text: "WordPress, Shopify or Fully Custom Builds",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Conversion-Driven Layouts & User Flows",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Mobile-First, Responsive Across All Devices",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Clean Code & Long-Term Maintainability",
+        dotClassName: "bg-[#008486]",
+      },
+    ],
+    icon: (
+      <ServiceIconWrap>
+        <MonitorSmartphone className="h-8 w-8" strokeWidth={1.8} />
+      </ServiceIconWrap>
+    ),
+  },
+  {
+    title: "Integrations & Automation",
+    description:
+      "Your website shouldn't operate in isolation. We connect it to your systems, automate the manual work, and build smarter workflows so your business runs more efficiently.",
+    imageSrc: "/images/services/web-design-development.png",
+    imageAlt: "Designer working on a website layout across multiple screens",
+    href: "/services/essential-care",
+    reverse: false,
+    features: [
+      {
+        text: "CRM & Lead Management Integrations",
+        dotClassName: "bg-[#0ca2a6]",
+      },
+      {
+        text: "API & Third-Party System Connections",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Ecommerce, Payments & Fulfilment Flows",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Automation of Repetitive Tasks & Workflows",
+        dotClassName: "bg-[#008486]",
+      },
     ],
     icon: (
       <ServiceIconWrap>
@@ -137,14 +104,28 @@ const services = [
   {
     title: "Essential Care",
     description:
-      "We design and build high-performing websites that are as functional as they are visually compelling. Whether you need a sleek marketing site or a more tailored digital platform, we combine thoughtful design with clean, scalable code.",
+      "Ongoing maintenance and support to keep your website running smoothly behind the scenes. We manage updates and monitor performance so your site stays reliable, secure, and always ready to support your business.",
     imageSrc: "/images/services/web-design-development.png",
     imageAlt: "Designer working on a website layout across multiple screens",
     href: "/services/essential-care",
-    reverse: false,
+    reverse: true,
     features: [
-      { text: "Custom Website Design", dotClassName: "bg-[#0ca2a6]" },
-      { text: "Responsive Development", dotClassName: "bg-[#008486]" },
+      {
+        text: "Hosting, Updates & Technical Maintenance",
+        dotClassName: "bg-[#0ca2a6]",
+      },
+      {
+        text: "Security Monitoring & Daily Backups",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Uptime Monitoring & Performance Checks",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Priority Support when you need it",
+        dotClassName: "bg-[#008486]",
+      },
     ],
     icon: (
       <ServiceIconWrap>
@@ -153,16 +134,34 @@ const services = [
     ),
   },
   {
-    title: "White-Label Partnerships",
+    title: "White Label Partnerships",
     description:
-      "We design and build high-performing websites that are as functional as they are visually compelling. Whether you need a sleek marketing site or a more tailored digital platform, we combine thoughtful design with clean, scalable code.",
+      "Scale your agency without increasing overhead. We handle the technical delivery behind the scenes so you can focus on clients, sales, and growth.",
     imageSrc: "/images/services/web-design-development.png",
     imageAlt: "Designer working on a website layout across multiple screens",
     href: "/services/white-label-partnerships",
-    reverse: true,
+    reverse: false,
     features: [
-      { text: "Custom Website Design", dotClassName: "bg-[#0ca2a6]" },
-      { text: "Responsive Development", dotClassName: "bg-[#008486]" },
+      {
+        text: "Website Builds, Renovations & Technical Work",
+        dotClassName: "bg-[#0ca2a6]",
+      },
+      {
+        text: "Ongoing Care & Support Delivered Under Your Brand",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Fast, Reliable Turnaround You Can Trust",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Flexible Engagement to Suit Your Workflow",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Direct Access to a Senior Developer",
+        dotClassName: "bg-[#008486]",
+      },
     ],
     icon: (
       <ServiceIconWrap>
