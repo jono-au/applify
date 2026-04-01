@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import SupportCareCard from "./SupportCareCard";
 import { supportPlans } from "@/data/supportCareData";
+import HighlightText from "@/components/ui/HighlightText";
 
 export default function SupportCareSection() {
   return (
@@ -19,12 +20,7 @@ export default function SupportCareSection() {
             </p>
 
             <h2 className="text-5xl font-semibold leading-[0.95] tracking-tight text-black sm:text-6xl md:text-7xl">
-              Priority support
-              <span className="relative inline-block">
-                {" "}
-                when you need it
-                <span className="absolute bottom-2 left-0 h-3 w-full rounded-full bg-[#ffb846]/80 -z-10" />
-              </span>
+              Priority support when you need it
             </h2>
 
             <p className="mt-8 max-w-[62ch] text-lg leading-8 text-black/65 md:text-xl">
