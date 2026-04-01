@@ -14,10 +14,10 @@ export default function Hero() {
     <section className="pt-4 pb-10 md:pt-6 md:pb-14">
       <Container>
         <div className="relative overflow-hidden rounded-[2.5rem] bg-applify-gradient">
-          <div className="grid min-h-[620px] items-center gap-10 px-8 py-12 md:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:px-16 lg:py-16">
+          <div className="grid min-h-[620px] items-center gap-10 px-8 py-12 md:px-12 lg:grid-cols-[1.05fr_0.55fr] lg:px-16 lg:py-16">
             {/* LEFT */}
             <div className="relative z-10 text-white">
-              <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-[3rem] lg:leading-[1.05]">
+              <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-[4rem] lg:leading-[1.05]">
                 Websites that look sharp, load fast and convert.
               </h1>
 
