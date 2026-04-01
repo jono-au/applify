@@ -7,7 +7,7 @@ import CTABanner from "@/components/ui/CtaBanner";
 export const metadata: Metadata = {
   title: "Website Pricing & Care Plans",
   description:
-    "Clear pricing for website renovations, new builds and ongoing website care from Applify.",
+    "Clear pricing for website builds, renovations, and ongoing care. No hidden costs. No agency nonsense.",
 };
 
 export default function PricingPage() {
@@ -16,7 +16,7 @@ export default function PricingPage() {
       <InternalPageHero
         title="Simple Pricing"
         highlightText="Simple"
-        description="Clear pricing for website renovations, new builds and ongoing website care from Applify."
+        description="Clear pricing for website builds, renovations, and ongoing care. No hidden costs."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Pricing" }]}
       />
       <PricingSections />
