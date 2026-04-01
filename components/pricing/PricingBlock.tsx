@@ -3,6 +3,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import Container from "@/components/ui/Container";
 import { ArrowUpRight } from "lucide-react";
+import CTAButton from "../ui/CtaButton";
 
 type PricingBlockProps = {
   eyebrow: string;
@@ -118,13 +119,7 @@ export default function PricingBlock({
                 </div>
 
                 <div className="mt-7">
-                  <Link
-                    href="/contact"
-                    className="group inline-flex items-center gap-2 rounded-full border border-[#0f0f10]/20 bg-white px-5 py-3 text-sm font-medium text-[#0f0f10] transition-all duration-300 hover:border-[#0f0f10] hover:bg-[#0f0f10] hover:text-white"
-                  >
-                    Contact
-                    <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-[1px] group-hover:translate-x-[1px]" />
-                  </Link>
+                  <CTAButton href="/contact">Contact Us </CTAButton>
                 </div>
               </div>
             </div>
@@ -175,13 +170,7 @@ export default function PricingBlock({
             </div>
 
             <div className="mt-7">
-              <Link
-                href="/contact"
-                className="group inline-flex items-center gap-2 rounded-full border border-[#0f0f10]/20 bg-white px-5 py-3 text-sm font-medium text-[#0f0f10] transition-all duration-300 hover:border-[#0f0f10] hover:bg-[#0f0f10] hover:text-white"
-              >
-                Contact
-                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-[1px] group-hover:translate-x-[1px]" />
-              </Link>
+              <CTAButton href="/contact">Contacts Us </CTAButton>
             </div>
           </div>
         </div>
