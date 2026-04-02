@@ -4,7 +4,6 @@ import AboutIntro from "@/components/about/AboutIntro";
 import WhyApplify from "@/components/about/WhyApplify";
 import ImageBreak from "@/components/ui/ImageBreak";
 import TeamSection from "@/components/about/TeamSection";
-
 import CTABanner from "@/components/ui/CtaBanner";
 import Footer from "@/components/layout/Footer";
 
@@ -19,7 +18,6 @@ export default function AboutPage() {
     <>
       <InternalPageHero
         title="About Us"
-        highlightText="Us"
         description="We build digital experiences that drive real results."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
