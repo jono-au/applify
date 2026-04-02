@@ -58,7 +58,7 @@ export default function PortfolioCard({
             ))}
           </div>
 
-          <h3 className="text-2xl font-semibold leading-tight tracking-tight text-neutral-950 sm:text-[2rem]">
+          <h3 className="heading-h3">
             {/* <Link
               href={href}
               className="transition-colours hover:text-neutral-700 focus:outline-none"
