@@ -9,36 +9,19 @@ type TeamMember = {
 };
 
 type TeamSectionProps = {
-  eyebrow?: string;
-  title?: string;
-  highlightText?: string;
-  members?: TeamMember[];
+  members: TeamMember[];
 };
 
-export default function TeamSection({
-  eyebrow = "Our Team",
-  title = "Meet the people behind the work",
-  highlightText = "people",
-  members = defaultMembers,
-}: TeamSectionProps) {
-  const titleParts = title.split(
-    new RegExp(`(${escapeRegExp(highlightText)})`, "gi"),
-  );
-
+export default function TeamSection({ members }: TeamSectionProps) {
   return (
     <section className="py-20 sm:py-24 lg:py-28">
       <Container>
         <div className="mx-auto max-w-[680px] text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0f0f10]/70">
-            {eyebrow}
-          </p>
+          <p className="eyebrow">Nice to meet you</p>
 
-          <h2 className="mt-5 text-[2.4rem] font-semibold leading-[0.96] tracking-[-0.045em] text-[#0f0f10] sm:text-[3.25rem] lg:text-[4.8rem]">
-            {title}
-          </h2>
+          <h2 className="heading-h2">I love working with great people</h2>
         </div>
 
-        {/* <div className="mx-auto mt-14 grid max-w-[760px] gap-x-8 gap-y-10 sm:grid-cols-2 lg:mt-16 lg:max-w-[820px]"> */}
         <div className="mx-auto mt-14 grid max-w-[760px] gap-x-8 gap-y-10 lg:mt-16 lg:max-w-[820px]">
           {members.map((member) => (
             <article key={member.name} className="text-center">
@@ -66,8 +49,4 @@ export default function TeamSection({
       </Container>
     </section>
   );
-}
-
-function escapeRegExp(value: string) {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }

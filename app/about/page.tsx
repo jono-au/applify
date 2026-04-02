@@ -26,8 +26,6 @@ export default function AboutPage() {
       <WhyApplify />
       <ImageBreak imageSrc="/images/image-break.webp" />
       <TeamSection
-        eyebrow="Nice to meet you"
-        title="I love working with great people"
         members={[
           {
             name: "Jonathan Chan",
