@@ -53,8 +53,12 @@ export default function PricingBlock({
                 reverse ? "lg:order-2" : "lg:order-1",
               )}
             >
-              <div className="flex items-start justify-start">
-                <p className="pt-2 text-left text-base font-semibold text-[#0f0f10] sm:text-lg lg:hidden">
+              <div className="lg:hidden">
+                <h3 className="text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#0f0f10] sm:text-4xl">
+                  {title}
+                </h3>
+
+                <p className="pt-2 text-left text-base font-semibold text-[#0f0f10] sm:text-lg">
                   {price}
                 </p>
               </div>
