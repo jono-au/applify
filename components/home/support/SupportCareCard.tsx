@@ -55,9 +55,7 @@ export default function SupportCareCard({
             <p className="mb-1 text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
               {eyebrow}
             </p>
-            <h3 className="text-3xl font-semibold tracking-tight text-black">
-              {title}
-            </h3>
+            <h3 className="heading-h3">{title}</h3>
           </div>
         </div>
 

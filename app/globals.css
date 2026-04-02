@@ -39,6 +39,10 @@
   @apply mt-3 text-[2.35rem] font-bold leading-[1.05] tracking-[-0.03em] text-black sm:text-[2.8rem] md:text-5xl lg:text-[4rem] lg:leading-[1.05];
 }
 
+@utility heading-h3 {
+  @apply text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#0f0f10] sm:text-4xl;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

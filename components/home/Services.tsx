@@ -65,9 +65,7 @@ export default function Services() {
 
                 {/* content */}
                 <div className="min-w-0">
-                  <h3 className="text-[2rem] font-bold leading-tight text-black transition-colors duration-300 md:text-[2.05rem]">
-                    {service.title}
-                  </h3>
+                  <h3 className="heading-h3">{service.title}</h3>
 
                   <p className="mt-3 text-lg leading-[1.55] text-black/60 transition-colors duration-300 md:text-[1.06rem] md:group-hover:text-black/75">
                     {service.description}

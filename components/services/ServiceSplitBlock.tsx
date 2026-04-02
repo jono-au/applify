@@ -62,9 +62,7 @@ export default function ServiceSplitBlock({
             </p>
           ) : null}
 
-          <h2 className="mt-6 text-[2.25rem] font-semibold leading-[0.98] tracking-[-0.04em] text-[#0f0f10] sm:text-5xl lg:text-[3.25rem]">
-            {title}
-          </h2>
+          <h2 className="heading-h2">{title}</h2>
 
           <p className="mt-5 max-w-[58ch] text-base leading-8 text-[#4b4b4f] sm:text-lg">
             {description}
