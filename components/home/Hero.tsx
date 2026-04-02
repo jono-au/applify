@@ -12,16 +12,15 @@ const points = [
 export default function Hero() {
   return (
     <section className="pt-4 pb-10 md:pt-6 md:pb-14">
-      <Container>
+      <Container size="wide">
         <div className="relative overflow-hidden rounded-[2.5rem] bg-applify-gradient">
           <div className="grid min-h-[620px] items-center gap-10 px-8 py-12 md:px-12 lg:grid-cols-[1.05fr_0.55fr] lg:px-16 lg:py-16">
-            {/* LEFT */}
             <div className="relative z-10 text-white">
-              <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-[4rem] lg:leading-[1.05]">
+              <h1 className="heading-h2 text-white">
                 Websites that look sharp, load fast and convert.
               </h1>
 
-              <p className="mt-6 text-lg leading-relaxed text-white/90 md:text-xl">
+              <p className="mt-6 max-w-[34rem] text-lg leading-8 text-white/90 md:text-xl">
                 We build high performing WordPress and Shopify websites for
                 Australian businesses. Fast, easy to manage and built to drive
                 real results.
@@ -37,13 +36,14 @@ export default function Hero() {
                     <span className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-applify-amber text-applify-amber">
                       ✓
                     </span>
-                    <span className="text-lg leading-relaxed text-white/95">
+                    <span className="text-lg leading-7 text-white/95">
                       {point}
                     </span>
                   </li>
                 ))}
               </ul>
             </div>
+
             <div className="relative flex items-end justify-center">
               <Image
                 src="/images/hero-placeholder.webp"
