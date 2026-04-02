@@ -18,7 +18,7 @@ export default function CTABanner() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#ffb846] via-[#ff9a3d] to-[#ff5a00]" />
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
           <div className="relative z-10 flex flex-col items-center text-center">
-            <h2 className="max-w-[1000px] text-4xl sm:text-5xl lg:text-[64px] font-semibold leading-tight tracking-[-0.03em] text-[#ffffff]">
+            <h2 className="max-w-[1000px] heading-h2 text-[#ffffff]">
               Ready to build a better website?
             </h2>
             <p className="mt-4 max-w-[600px] text-base sm:text-lg text-[#ffffff] leading-relaxed">
