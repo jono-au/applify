@@ -35,6 +35,10 @@
   @apply mb-3 md:mb-5 text-xs md:text-sm font-semibold uppercase tracking-[0.08em] text-neutral-500;
 }
 
+@utility heading-h1 {
+  @apply max-w-[10ch] text-[3.2rem] font-bold leading-[0.92] tracking-[-0.05em] text-black sm:text-[4.4rem] md:max-w-none md:text-[5.8rem] lg:text-[6.8rem];
+}
+
 @utility heading-h2 {
   @apply mt-3 text-[2.35rem] font-bold leading-[1.05] tracking-[-0.03em] text-black sm:text-[2.8rem] md:text-5xl lg:text-[4rem] lg:leading-[1.05];
 }
