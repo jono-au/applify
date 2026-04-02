@@ -11,17 +11,17 @@ type ContactItem = {
 const contactItems: ContactItem[] = [
   {
     icon: MapPin,
-    title: "Our Location:",
+    title: "Our Location",
     lines: ["8 Clunies Ross Crt, Eight Mile Plains", "QLD 4113 Australia"],
   },
   {
     icon: Mail,
-    title: "Email us at:",
+    title: "Email us at",
     lines: ["hello@applify.com.au", "support@applify.com.au"],
   },
   {
     icon: Phone,
-    title: "Phone Number:",
+    title: "Phone Number",
     lines: ["0421 238 196", "Mon-Fri, 8:00am-5:00pm"],
   },
 ];
@@ -44,9 +44,7 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold tracking-[-0.03em] text-black md:text-[2rem]">
-                    {item.title}
-                  </h3>
+                  <h3 className="heading-h3">{item.title}</h3>
 
                   <div className="mt-3 space-y-1 text-lg leading-relaxed text-black/75 md:text-[1.75rem] md:leading-[1.45] lg:text-[1.2rem]">
                     {item.lines.map((line) => (
