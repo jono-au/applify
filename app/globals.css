@@ -30,6 +30,15 @@
   border-radius: 40px;
 }
 
+@utility eyebrow {
+  border-radius: 40px;
+  @apply mb-3 md:mb-5 text-xs md:text-sm font-semibold uppercase tracking-[0.08em] text-neutral-500;
+}
+
+@utility heading-h2 {
+  @apply mt-3 text-[2.35rem] font-bold leading-[1.05] tracking-[-0.03em] text-black sm:text-[2.8rem] md:text-5xl lg:text-[4rem] lg:leading-[1.05];
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -40,5 +49,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }

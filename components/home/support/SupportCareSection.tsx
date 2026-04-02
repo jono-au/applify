@@ -2,7 +2,6 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import SupportCareCard from "./SupportCareCard";
 import { supportPlans } from "@/data/supportCareData";
-import HighlightText from "@/components/ui/HighlightText";
 
 export default function SupportCareSection() {
   return (
@@ -15,13 +14,9 @@ export default function SupportCareSection() {
       <Container className="relative z-10">
         <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
           <div className="max-w-[760px]">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-neutral-600">
-              Support & Care
-            </p>
+            <p className="eyebrow">Support & Care</p>
 
-            <h2 className="text-5xl font-semibold leading-[0.95] tracking-tight text-black sm:text-6xl md:text-7xl">
-              Priority support when you need it
-            </h2>
+            <h2 className="heading-h2">Priority support when you need it</h2>
 
             <p className="mt-8 max-w-[62ch] text-lg leading-8 text-black/65 md:text-xl">
               Keep your website secure, updated, and performing at its best with

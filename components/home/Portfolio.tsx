@@ -10,11 +10,9 @@ export default function PortfolioSection() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-7">
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-neutral-600">
-              Our Work
-            </p>
+            <p className="eyebrow">Our Work</p>
 
-            <h2 className="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
+            <h2 className="heading-h2">
               Projects we've been proud to work on.
             </h2>
           </div>

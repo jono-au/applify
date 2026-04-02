@@ -22,7 +22,7 @@ const contactItems: ContactItem[] = [
   {
     icon: Phone,
     title: "Phone Number:",
-    lines: ["0421 238 196", "Mon–Fri, 8:00am–5:00pm"],
+    lines: ["0421 238 196", "Mon-Fri, 8:00am-5:00pm"],
   },
 ];
 
@@ -61,9 +61,7 @@ export default function ContactSection() {
 
         <div>
           <div className="max-w-[980px]">
-            <h2 className="text-[2.4rem] font-black leading-none tracking-[-0.04em] text-black sm:text-[2.9rem] md:text-[3.4rem]">
-              Send us a Message
-            </h2>
+            <h2 className="heading-h2">Send us a Message</h2>
 
             <form className="mt-8 md:mt-10">
               <div className="grid gap-x-8 gap-y-7 md:grid-cols-2 md:gap-x-10 md:gap-y-8">

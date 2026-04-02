@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { ArrowButton } from "@/components/ui/ArrowBtn";
-import HighlightText from "@/components/ui/HighlightText";
 
 const services = [
   {
@@ -35,11 +34,9 @@ export default function Services() {
     <section className="py-14 md:py-20 lg:py-24">
       <Container>
         <div className="mx-auto max-w-[980px] text-center">
-          <p className="text-sm font-semibold text-black/65 md:text-base">
-            What We Do
-          </p>
+          <p className="eyebrow">What We Do</p>
 
-          <h2 className="mt-3 text-[2.35rem] font-bold leading-[1.05] tracking-[-0.03em] text-black sm:text-[2.8rem] md:text-5xl lg:text-[4rem] lg:leading-[1.05]">
+          <h2 className="heading-h2">
             Everything you need to build, run and grow online.
           </h2>
         </div>

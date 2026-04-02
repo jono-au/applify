@@ -43,13 +43,9 @@ export default function PricingBlock({
       {" "}
       <Container>
         <div className="mx-auto w-full">
-          {eyebrow && (
-            <p className="mb-4 text-center text-sm font-semibold text-[#0f0f10]">
-              {eyebrow}
-            </p>
-          )}
+          {eyebrow && <p className="eyebrow text-center ">{eyebrow}</p>}
 
-          <h2 className="mx-auto mb-8 max-w-[820px] text-center text-4xl font-semibold leading-tight tracking-[-0.04em] text-[#0f0f10] sm:mb-10 sm:text-5xl lg:mb-12 lg:text-6xl">
+          <h2 className="heading-h2 text-center mb-8 sm:mb-10 lg:mb-16 max-w-[820px] mx-auto">
             {heading}
           </h2>
 
