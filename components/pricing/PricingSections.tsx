@@ -15,8 +15,6 @@ export default function PricingSections() {
           features={item.features}
           image={item.image}
           imageAlt={item.imageAlt}
-          icon={item.icon}
-          iconAlt={item.iconAlt}
           reverse={index % 2 !== 0}
           muted={index % 2 !== 0}
         />

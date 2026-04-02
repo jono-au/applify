@@ -14,8 +14,6 @@ type PricingBlockProps = {
   features: string[];
   image: string;
   imageAlt: string;
-  icon: string;
-  iconAlt: string;
   reverse?: boolean;
   muted?: boolean;
 };
@@ -29,8 +27,6 @@ export default function PricingBlock({
   features,
   image,
   imageAlt,
-  icon,
-  iconAlt,
   reverse = false,
   muted = false,
 }: PricingBlockProps) {
@@ -57,18 +53,8 @@ export default function PricingBlock({
                 reverse ? "lg:order-2" : "lg:order-1",
               )}
             >
-              <div className="flex items-start justify-between gap-3">
-                <div className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
-                  <Image
-                    src={icon}
-                    alt={iconAlt}
-                    width={36}
-                    height={36}
-                    className="h-9 w-9 object-contain"
-                  />
-                </div>
-
-                <p className="pt-2 text-right text-base font-semibold text-[#0f0f10] sm:text-lg lg:hidden">
+              <div className="flex items-start justify-start">
+                <p className="pt-2 text-left text-base font-semibold text-[#0f0f10] sm:text-lg lg:hidden">
                   {price}
                 </p>
               </div>
@@ -166,7 +152,7 @@ export default function PricingBlock({
             </div>
 
             <div className="mt-7">
-              <CTAButton href="/contact">Contacts Us </CTAButton>
+              <CTAButton href="/contact">Contact Us </CTAButton>
             </div>
           </div>
         </div>
