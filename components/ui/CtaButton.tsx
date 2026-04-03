@@ -21,14 +21,14 @@ export default function CTAButton({
       className={clsx(
         "group inline-flex items-center justify-center gap-2",
         "min-h-[56px] px-6 rounded-full",
-        "text-base font-semibold",
+        "text-lg font-semibold",
         "shadow-lg transition-all duration-300",
         "hover:-translate-y-0.5 hover:shadow-xl",
         "active:scale-[0.98]",
 
         // VARIANTS
         variant === "primary" &&
-          "text-white bg-gradient-to-r from-[#ffb846] to-[#ff9a00]",
+          "text-white bg-gradient-to-r from-[#ffb846] to-[#ff9a00] border-none",
 
         variant === "secondary" &&
           "text-white bg-gradient-to-r from-[#0ca2a6] to-[#008486]",

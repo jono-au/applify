@@ -65,25 +65,21 @@ export default function PricingBlock({
 
               <div className="hidden lg:block">
                 <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-                  <h3 className="text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#0f0f10] sm:text-4xl">
-                    {title}
-                  </h3>
+                  <h3 className="heading-h3">{title}</h3>
 
                   <p className="text-base font-semibold text-[#0f0f10] sm:shrink-0">
                     {price}
                   </p>
                 </div>
 
-                <p className="mt-4 max-w-[600px] text-base leading-7 text-[#3e3e42] sm:text-lg">
-                  {description}
-                </p>
+                <p className="mt-4 max-w-[600px] text-body">{description}</p>
 
                 <div className="mt-6 grid gap-x-8 gap-y-2.5 sm:grid-cols-2">
                   <ul className="space-y-3">
                     {leftFeatures.map((feature) => (
                       <li
                         key={feature}
-                        className="flex items-start gap-3 text-[15px] font-medium text-[#0f0f10]"
+                        className="flex items-start gap-3 list-items"
                       >
                         <span className="mt-[9px] h-2 w-2 rounded-full bg-[#ff8a00]" />
                         <span>{feature}</span>
@@ -95,7 +91,7 @@ export default function PricingBlock({
                     {rightFeatures.map((feature) => (
                       <li
                         key={feature}
-                        className="flex items-start gap-3 text-[15px] font-medium text-[#0f0f10]"
+                        className="flex items-start gap-3 list-items"
                       >
                         <span className="mt-[9px] h-2 w-2 rounded-full bg-[#ffb846]" />
                         <span>{feature}</span>
@@ -125,16 +121,14 @@ export default function PricingBlock({
           </div>
 
           <div className="mt-6 lg:hidden">
-            <p className="text-base leading-7 text-[#3e3e42] sm:text-lg">
-              {description}
-            </p>
+            <p className="text-body">{description}</p>
 
             <div className="mt-8 grid gap-x-10 gap-y-3 sm:grid-cols-2">
               <ul className="space-y-3">
                 {leftFeatures.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-start gap-3 text-[15px] font-medium text-[#0f0f10]"
+                    className="flex items-start gap-3 list-items"
                   >
                     <span className="mt-[9px] h-2 w-2 rounded-full bg-[#ff8a00]" />
                     <span>{feature}</span>
@@ -146,7 +140,7 @@ export default function PricingBlock({
                 {rightFeatures.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-start gap-3 text-[15px] font-medium text-[#0f0f10]"
+                    className="flex items-start gap-3 list-items"
                   >
                     <span className="mt-[9px] h-2 w-2 rounded-full bg-[#ffb846]" />
                     <span>{feature}</span>

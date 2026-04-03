@@ -18,7 +18,7 @@ export default function PortfolioSection() {
           </div>
 
           <div className="lg:col-span-5 lg:pl-8">
-            <p className="max-w-md text-base leading-8 text-neutral-600 sm:text-lg">
+            <p className="text-body">
               High performance, reliable websites built to support your business
               around the clock.
             </p>

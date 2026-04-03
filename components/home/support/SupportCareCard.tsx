@@ -59,9 +59,7 @@ export default function SupportCareCard({
           </div>
         </div>
 
-        <p className="mb-6 max-w-[52ch] text-lg leading-7 text-black/65">
-          {description}
-        </p>
+        <p className="mb-6 max-w-[52ch] text-body">{description}</p>
 
         <div className="mb-6 h-px w-full bg-black/8" />
 
@@ -78,7 +76,7 @@ export default function SupportCareCard({
                 <Icon className="h-5 w-5" />
               </div>
 
-              <span className="text-lg leading-7 text-black/80">{text}</span>
+              <span className="list-items">{text}</span>
             </li>
           ))}
         </ul>

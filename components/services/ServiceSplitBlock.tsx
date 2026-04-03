@@ -64,16 +64,14 @@ export default function ServiceSplitBlock({
 
           <h2 className="heading-h2">{title}</h2>
 
-          <p className="mt-5 max-w-[58ch] text-base leading-8 text-[#4b4b4f] sm:text-lg">
-            {description}
-          </p>
+          <p className="mt-5 max-w-[58ch] text-body">{description}</p>
 
           {features.length > 0 ? (
             <ul className="mt-7 space-y-4">
               {features.map((feature) => (
                 <li
                   key={feature.text}
-                  className="flex items-start gap-4 text-base font-medium text-[#0f0f10] sm:text-lg"
+                  className="flex items-start gap-4 list-items"
                 >
                   <span
                     className={clsx(

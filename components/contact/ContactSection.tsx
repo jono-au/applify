@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowUpRight, Mail, MapPin, Phone, LucideProps } from "lucide-react";
+import CTAButton from "../ui/CtaButton";
 
 type ContactItem = {
   icon: React.ComponentType<LucideProps>;
@@ -12,7 +13,7 @@ const contactItems: ContactItem[] = [
   {
     icon: MapPin,
     title: "Our Location",
-    lines: ["8 Clunies Ross Crt, Eight Mile Plains", "QLD 4113 Australia"],
+    lines: ["8 Clunies Ross Crt", "Eight Mile Plains", "QLD 4113 Australia"],
   },
   {
     icon: Mail,
@@ -44,9 +45,9 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <h3 className="heading-h3">{item.title}</h3>
+                  <h3 className="heading-h3 text-3xl">{item.title}</h3>
 
-                  <div className="mt-3 space-y-1 text-lg leading-relaxed text-black/75 md:text-[1.75rem] md:leading-[1.45] lg:text-[1.2rem]">
+                  <div className="mt-3 space-y-1 list-items">
                     {item.lines.map((line) => (
                       <p key={line}>{line}</p>
                     ))}
@@ -105,13 +106,9 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <button
-                type="submit"
-                className="group mt-10 inline-flex items-center gap-3 rounded-full border border-black/30 bg-white/50 px-8 py-4 text-base font-semibold text-black transition-all duration-300 hover:-translate-y-0.5 hover:border-black hover:bg-white"
-              >
-                <span>Send Now</span>
-                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </button>
+              <CTAButton href="#" className="mt-5 border-1 ">
+                Send Now
+              </CTAButton>
             </form>
           </div>
         </div>

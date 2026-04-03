@@ -16,10 +16,12 @@ export default function TeamSection({ members }: TeamSectionProps) {
   return (
     <section className="py-20 sm:py-24 lg:py-28">
       <Container>
-        <div className="mx-auto max-w-[680px] text-center">
+        <div className="mx-auto text-center">
           <p className="eyebrow">Nice to meet you</p>
 
-          <h2 className="heading-h2">I love working with great people</h2>
+          <h2 className="heading-h2 max-w-[600px] mx-auto">
+            I love working with great people
+          </h2>
         </div>
 
         <div className="mx-auto mt-14 grid max-w-[760px] gap-x-8 gap-y-10 lg:mt-16 lg:max-w-[820px]">

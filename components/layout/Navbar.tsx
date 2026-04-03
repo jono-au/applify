@@ -150,7 +150,7 @@ export default function Navbar() {
                     href={item.href}
                     ref={(el) => setItemRef(item.href, el)}
                     aria-current={active ? "page" : undefined}
-                    className="relative z-10 inline-block px-[2px] py-0 text-base font-semibold leading-none text-black transition-colors duration-200 lg:text-lg"
+                    className="relative z-1000 inline-block px-[2px] py-0 text-base font-semibold leading-none text-black transition-colors duration-200 lg:text-xl"
                   >
                     {item.label}
                   </Link>
@@ -204,7 +204,7 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     aria-current={active ? "page" : undefined}
-                    className={`rounded-2xl px-3 py-3 text-base font-semibold transition-colors duration-200 ${
+                    className={`rounded-2xl px-3 py-3 text-lg font-semibold transition-colors duration-200 ${
                       active
                         ? "bg-black/[0.04] text-black"
                         : "text-black hover:bg-black/[0.03]"

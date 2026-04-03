@@ -42,7 +42,7 @@ export default function AboutIntro({
 
             <h2 className="heading-h2">{title}</h2>
 
-            <div className="mt-8 space-y-5 text-base leading-8 text-[#0f0f10]/72 sm:text-lg">
+            <div className="mt-8 space-y-5 text-body">
               <p>{description}</p>
               <p>{secondaryDescription}</p>
             </div>

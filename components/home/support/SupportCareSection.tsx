@@ -18,7 +18,7 @@ export default function SupportCareSection() {
 
             <h2 className="heading-h2">Priority support when you need it</h2>
 
-            <p className="mt-8 max-w-[62ch] text-lg leading-8 text-black/65 md:text-xl">
+            <p className="mt-8 max-w-[62ch] text-body">
               Keep your website secure, updated, and performing at its best with
               fast, reliable support. We handle the technical side so you can
               focus on running your business.

@@ -66,9 +66,7 @@ export default function InternalPageHero({
 
             <h1 className="heading-h1">{title}</h1>
 
-            <p className="mt-6 max-w-[680px] text-lg leading-relaxed text-black/80 md:mt-7 md:text-xl">
-              {description}
-            </p>
+            <p className="mt-6 text-body md:mt-7">{description}</p>
           </motion.div>
 
           <div className="absolute inset-x-0 top-[80px] z-0 min-h-[220px] sm:top-[190px] sm:min-h-[300px] md:relative md:inset-auto md:-top-6 md:min-h-[360px] lg:top-0 lg:min-h-[430px]">
