@@ -21,28 +21,28 @@ export const servicesSplit: ServiceItem[] = [
     title: "Website Renovations",
     description:
       "We refine and rebuild the parts of your website that matter most. From structure and speed to usability and conversion, every improvement is focused on making your site easier to use and more effective at turning visitors into customers.",
-    imageSrc: "/images/services/digital-marketing.png",
+    imageSrc: "/images/services/renovations-min.webp",
     imageAlt:
-      "Team reviewing digital marketing dashboards on a desktop monitor",
+      "Webpage showing two website old version and new version side by side for comparison",
     href: "/services/website-renovations",
     reverse: false,
     icon: Megaphone,
     features: [
       {
-        text: "UX & Conversion Improvements",
+        text: "UX & conversion improvements",
         dotClassName: "bg-[#ff5a00]",
       },
       {
-        text: "Page Structure & Content Flow",
+        text: "Page structure & content flow",
         dotClassName: "bg-[#ff5a00]",
       },
       {
-        text: "Speed & Core Web Vitals",
+        text: "Speed & core web vitals",
         dotClassName: "bg-[#ff5a00]",
       },
       {
-        text: "Technical Cleanup & Code Optimisation",
-        dotClassName: "bg-[#ffb846]",
+        text: "Technical cleanup & code optimisation",
+        dotClassName: "bg-[#ff5a00]",
       },
     ],
   },
@@ -50,27 +50,28 @@ export const servicesSplit: ServiceItem[] = [
     title: "Custom Websites",
     description:
       "We design and build high-performing websites that are as functional as they are visually compelling. Whether you need a sleek marketing site or a more tailored digital platform, we combine thoughtful design with clean, scalable code.",
-    imageSrc: "/images/services/web-design-development.png",
-    imageAlt: "Designer working on a website layout across multiple screens",
+    imageSrc: "/images/services/custom-websites.webp",
+    imageAlt:
+      "A mobile website mockup showing a custom designed website on a smartphone screen",
     href: "/services/new-website-builds",
     reverse: true,
     icon: MonitorSmartphone,
     features: [
       {
-        text: "WordPress, Shopify or Fully Custom Builds",
-        dotClassName: "bg-[#008486]",
+        text: "WordPress, Shopify or fully custom builds",
+        dotClassName: "bg-[#0ca2a6]",
       },
       {
-        text: "Conversion-Driven Layouts & User Flows",
-        dotClassName: "bg-[#008486]",
+        text: "Conversion driven layouts & user flows",
+        dotClassName: "bg-[#0ca2a6]",
       },
       {
-        text: "Mobile-First, Responsive Across All Devices",
-        dotClassName: "bg-[#008486]",
+        text: "Mobile first, responsive across all devices",
+        dotClassName: "bg-[#0ca2a6]",
       },
       {
-        text: "Clean Code & Long-Term Maintainability",
-        dotClassName: "bg-[#008486]",
+        text: "Clean code & long term maintainability",
+        dotClassName: "bg-[#0ca2a6]",
       },
     ],
   },
@@ -78,27 +79,28 @@ export const servicesSplit: ServiceItem[] = [
     title: "Integrations & Automation",
     description:
       "Your website should not operate in isolation. We connect it to your systems, automate the manual work, and build smarter workflows so your business runs more efficiently.",
-    imageSrc: "/images/services/web-design-development.png",
-    imageAlt: "Designer working on a website layout across multiple screens",
+    imageSrc: "/images/services/integrations.webp",
+    imageAlt:
+      "Man sitting at a desk working on a laptop with various integration icons floating around him",
     href: "/services/integrations-automation",
     reverse: false,
     icon: MonitorSmartphone,
     features: [
       {
-        text: "CRM & Lead Management Integrations",
-        dotClassName: "bg-[#0ca2a6]",
+        text: "CRM & lead management integrations",
+        dotClassName: "bg-[#ffb846]",
       },
       {
-        text: "API & Third-Party System Connections",
-        dotClassName: "bg-[#008486]",
+        text: "API & third party system connections",
+        dotClassName: "bg-[#ffb846]",
       },
       {
-        text: "Ecommerce, Payments & Fulfilment Flows",
-        dotClassName: "bg-[#008486]",
+        text: "Ecommerce, payments & fulfilment flows",
+        dotClassName: "bg-[#ffb846]",
       },
       {
-        text: "Automation of Repetitive Tasks & Workflows",
-        dotClassName: "bg-[#008486]",
+        text: "Automation of repetitive tasks & workflows",
+        dotClassName: "bg-[#ffb846]",
       },
     ],
   },
@@ -106,26 +108,27 @@ export const servicesSplit: ServiceItem[] = [
     title: "Essential Care",
     description:
       "Ongoing maintenance and support to keep your website running smoothly behind the scenes. We manage updates and monitor performance so your site stays reliable, secure, and always ready to support your business.",
-    imageSrc: "/images/services/web-design-development.png",
-    imageAlt: "Designer working on a website layout across multiple screens",
+    imageSrc: "/images/services/care.webp",
+    imageAlt:
+      "Google lighthouse performance report showing high scores across all categories indicating a well optimised website",
     href: "/services/essential-care",
     reverse: true,
     icon: MonitorSmartphone,
     features: [
       {
-        text: "Hosting, Updates & Technical Maintenance",
-        dotClassName: "bg-[#0ca2a6]",
-      },
-      {
-        text: "Security Monitoring & Daily Backups",
+        text: "Hosting, updates & technical maintenance",
         dotClassName: "bg-[#008486]",
       },
       {
-        text: "Uptime Monitoring & Performance Checks",
+        text: "Security monitoring & daily backups",
         dotClassName: "bg-[#008486]",
       },
       {
-        text: "Priority Support when you need it",
+        text: "Uptime monitoring & performance checks",
+        dotClassName: "bg-[#008486]",
+      },
+      {
+        text: "Priority support when you need it",
         dotClassName: "bg-[#008486]",
       },
     ],
@@ -134,31 +137,32 @@ export const servicesSplit: ServiceItem[] = [
     title: "White Label Partnerships",
     description:
       "Scale your agency without increasing overhead. We handle the technical delivery behind the scenes so you can focus on clients, sales, and growth.",
-    imageSrc: "/images/services/web-design-development.png",
-    imageAlt: "Designer working on a website layout across multiple screens",
+    imageSrc: "/images/services/partnerships.webp",
+    imageAlt:
+      "Male and female professional sitting down together at a desk reviewing a website.",
     href: "/services/white-label-partnerships",
     reverse: false,
     icon: MonitorSmartphone,
     features: [
       {
-        text: "Website Builds, Renovations & Technical Work",
-        dotClassName: "bg-[#0ca2a6]",
+        text: "Website builds, renovations & technical work",
+        dotClassName: "bg-[#ffb846]",
       },
       {
-        text: "Ongoing Care & Support Delivered Under Your Brand",
-        dotClassName: "bg-[#008486]",
+        text: "Ongoing care & support delivered under your brand",
+        dotClassName: "bg-[#ffb846]",
       },
       {
-        text: "Fast, Reliable Turnaround You Can Trust",
-        dotClassName: "bg-[#008486]",
+        text: "Fast, reliable turnaround you can trust",
+        dotClassName: "bg-[#ffb846]",
       },
       {
-        text: "Flexible Engagement to Suit Your Workflow",
-        dotClassName: "bg-[#008486]",
+        text: "Flexible engagement to suit your workflow",
+        dotClassName: "bg-[#ffb846]",
       },
       {
-        text: "Direct Access to a Senior Developer",
-        dotClassName: "bg-[#008486]",
+        text: "Direct access to a senior developer",
+        dotClassName: "bg-[#ffb846]",
       },
     ],
   },
