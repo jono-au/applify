@@ -13,18 +13,23 @@ type ContactItem = {
 const contactItems: ContactItem[] = [
   {
     icon: MapPin,
-    title: "Our Location",
+    title: "Our location",
     lines: ["8 Clunies Ross Crt", "Eight Mile Plains", "QLD 4113 Australia"],
   },
   {
     icon: Mail,
-    title: "Email us at",
-    lines: ["hello@applify.com.au", "support@applify.com.au"],
+    title: "Email us",
+    lines: ["hello@applify.com.au", "jonathan@applify.com.au"],
   },
   {
     icon: Phone,
-    title: "Phone Number",
-    lines: ["0421 238 196", "Mon-Fri, 8:00am-5:00pm"],
+    title: "Phone number",
+    lines: [
+      "0421 238 196",
+      "Mon-Fri: 9:00am-7:00pm",
+      "Sat: 10:00am-3:00pm",
+      "Sun: 10:00am-2:00pm",
+    ],
   },
 ];
 
