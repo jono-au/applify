@@ -13,10 +13,10 @@ type AboutIntroProps = {
 export default function AboutIntro({
   eyebrow = "Who We Are",
   title = "Helping Australian businesses connect with and serve more customers online.",
-  description = "We build custom websites and digital solutions designed support long term growth. Every project is led by a senior developer, with clear communication and practical thinking from start to finish.",
+  description = "We build custom websites and digital solutions designed to support long term growth. Every project is led by a senior developer, with clear communication and practical thinking from start to finish.",
   secondaryDescription = "Whether it's improving your online presence, refining the user journey, or building custom functionality, we focus on solutions that work in the real world.",
-  imageSrc = "/images/about/about-team.png",
-  imageAlt = "Applify team collaborating around a computer",
+  imageSrc = "/images/about/about.jpeg",
+  imageAlt = "Laptop on a desk showing a website being built with code on the screen",
 }: AboutIntroProps) {
   return (
     <section className="py-16 sm:py-20 lg:py-24">
