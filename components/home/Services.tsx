@@ -17,15 +17,15 @@ const services = [
     href: "/services",
   },
   {
-    title: "Ongoing Care",
-    description:
-      "Keep your website secure, up to date and performing at its best. Ongoing care with priority support so you can focus on running your business.",
-    href: "/services",
-  },
-  {
     title: "Integrations & Automation",
     description:
       "Connect your systems and automate work slowing you down. We streamline your processes, reduce manual tasks and build efficient workflows that scale with your business.",
+    href: "/services",
+  },
+  {
+    title: "Ongoing Care",
+    description:
+      "Keep your website secure, up to date and performing at its best. Ongoing care with priority support so you can focus on running your business.",
     href: "/services",
   },
 ];
@@ -48,7 +48,7 @@ export default function Services() {
             <Link
               key={service.title}
               href={service.href}
-              className="group block rounded-[1.75rem] border border-black/[0.03] bg-white shadow-[0_10px_35px_rgba(0,0,0,0.045)] transition-all duration-300 md:hover:-translate-y-[4px] md:hover:border-black/[0.06] md:hover:bg-applify-amber/90 md:hover:shadow-[0_18px_50px_rgba(255,184,70,0.22)] active:scale-[0.985] active:bg-gray-100 active:shadow-[0_6px_18px_rgba(0,0,0,0.08)] active:transition-none"
+              className="group block rounded-[1.75rem] border border-black/[0.03] bg-white shadow-[0_10px_35px_rgba(0,0,0,0.045)] transition-all duration-300 md:hover:-translate-y-[4px] md:hover:bg-[#f5f3ef] md:hover:shadow-[white] active:scale-[0.985] active:bg-gray-100 active:shadow-[0_6px_18px_rgba(0,0,0,0.08)] active:transition-none"
             >
               <div className="grid gap-5 px-5 py-6 sm:px-6 md:grid-cols-[72px_minmax(0,1fr)_72px] md:items-center md:gap-6 md:px-8 md:py-7 lg:px-10">
                 <div className="flex items-center justify-between md:block">
