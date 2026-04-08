@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Container from "@/components/ui/Container";
-import { ArrowButton } from "@/components/ui/ArrowBtn";
 import CTAButton from "../ui/CtaButton";
 
 const navItems = [
