@@ -3,6 +3,7 @@ import {
   portfolioLeftItems,
   portfolioRightItems,
 } from "@/data/portfolio-items";
+import Dot from "@/components/ui/Dot";
 
 export default function PortfolioSection() {
   return (
@@ -13,7 +14,8 @@ export default function PortfolioSection() {
             <p className="eyebrow">Our Work</p>
 
             <h2 className="heading-h2">
-              Projects we've been proud to work on.
+              Projects we've been proud to work on
+              <Dot variant="maroon" />
             </h2>
           </div>
 

@@ -1,7 +1,7 @@
 export const pricingItems = [
   {
     eyebrow: "No Agency Nonsense",
-    heading: "Website builds & renovations for growing businesses.",
+    heading: "Website builds & renovations for growing businesses",
     price: "Starting from $3500",
     title: "Fixed scope. Delivered by a senior developer.",
     description:
@@ -14,6 +14,8 @@ export const pricingItems = [
       "Speed, performance & technical optimisation",
       "Cleanup of bloated themes, plugins or code",
     ],
+    dotVariant: "maroon",
+    showDot: true,
     image: "/images/pricing/fix-scope.webp",
     imageAlt: "Website homepage design on a desktop monitor",
     icon: "/images/pricing/world-wide-web.png",
@@ -34,6 +36,7 @@ export const pricingItems = [
       "Plugin & theme customisation",
       "Form, tracking & analytics setup",
     ],
+    showDot: false,
     image: "/images/pricing/fixes.webp",
     imageAlt: "Developer working on a laptop with code on the screen",
     icon: "/images/pricing/fix.png",
@@ -54,6 +57,8 @@ export const pricingItems = [
       "Uptime & performance monitoring",
       "Priority support",
     ],
+    dotVariant: "orange",
+    showDot: true,
     image: "/images/pricing/essential-care.webp",
     imageAlt: "Dashboard showing website performance and security monitoring",
     icon: "/images/pricing/fix.png",

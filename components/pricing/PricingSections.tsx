@@ -17,6 +17,8 @@ export default function PricingSections() {
           imageAlt={item.imageAlt}
           reverse={index % 2 !== 0}
           muted={index % 2 !== 0}
+          dotVariant={item.dotVariant}
+          showDot={item.showDot}
         />
       ))}
     </>

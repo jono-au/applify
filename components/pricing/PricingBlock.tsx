@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import Container from "@/components/ui/Container";
-import { ArrowUpRight } from "lucide-react";
 import CTAButton from "../ui/CtaButton";
+import Dot from "@/components/ui/Dot";
 
 type PricingBlockProps = {
   eyebrow: string;
@@ -16,6 +16,8 @@ type PricingBlockProps = {
   imageAlt: string;
   reverse?: boolean;
   muted?: boolean;
+  dotVariant?: "orange" | "amber" | "teal" | "maroon";
+  showDot?: boolean;
 };
 
 export default function PricingBlock({
@@ -29,6 +31,8 @@ export default function PricingBlock({
   imageAlt,
   reverse = false,
   muted = false,
+  dotVariant = "orange",
+  showDot = true,
 }: PricingBlockProps) {
   const midpoint = Math.ceil(features.length / 2);
   const leftFeatures = features.slice(0, midpoint);
@@ -43,6 +47,7 @@ export default function PricingBlock({
 
           <h2 className="heading-h2 text-center mb-8 sm:mb-10 lg:mb-16 max-w-[820px] mx-auto">
             {heading}
+            {showDot && <Dot variant={dotVariant} />}
           </h2>
 
           <div className="grid items-start gap-6 lg:grid-cols-[1fr_1.08fr] lg:items-center lg:gap-12">

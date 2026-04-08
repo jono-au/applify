@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import SupportCareCard from "./SupportCareCard";
 import { supportPlans } from "@/data/supportCareData";
+import Dot from "@/components/ui/Dot";
 
 export default function SupportCareSection() {
   return (
@@ -16,7 +17,10 @@ export default function SupportCareSection() {
           <div className="max-w-[760px]">
             <p className="eyebrow">Support & Care</p>
 
-            <h2 className="heading-h2">Priority support when you need it</h2>
+            <h2 className="heading-h2">
+              Priority support when you need it
+              <Dot variant="amber" />
+            </h2>
 
             <p className="mt-8 max-w-[62ch] text-body">
               Keep your website secure, updated, and performing at its best with

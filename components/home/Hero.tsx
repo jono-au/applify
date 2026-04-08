@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import CTAButton from "../ui/CtaButton";
+import Dot from "@/components/ui/Dot";
 
 const points = [
   "Senior led builds with no agency run-around",
@@ -17,7 +18,8 @@ export default function Hero() {
           <div className="grid min-h-[620px] items-center gap-10 px-8 py-12 md:px-12 lg:grid-cols-[1.05fr_0.55fr] lg:px-16 lg:py-16">
             <div className="relative z-10 text-white">
               <h1 className="heading-h2 text-white">
-                Websites that look sharp, load fast and convert.
+                Websites that look sharp, load fast and convert
+                <Dot variant="amber" />
               </h1>
 
               <p className="mt-6 max-w-[34rem] text-lg leading-8 text-white/90 md:text-xl">
@@ -45,14 +47,14 @@ export default function Hero() {
             </div>
 
             <div className="relative flex items-end justify-center">
-              <Image
+              {/* <Image
                 src="/images/hero-placeholder.webp"
                 alt="Happy business owner using a phone"
                 width={700}
                 height={700}
                 priority
                 className="h-auto w-[300px] md:w-[420px] lg:w-[520px]"
-              />
+              /> */}
             </div>
           </div>
         </div>

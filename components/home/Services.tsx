@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { ArrowButton } from "@/components/ui/ArrowBtn";
+import Dot from "@/components/ui/Dot";
 
 const services = [
   {
@@ -37,7 +38,8 @@ export default function Services() {
           <p className="eyebrow">What We Do</p>
 
           <h2 className="heading-h2">
-            Everything you need to build, run and grow online.
+            Everything you need to build, run and grow online
+            <Dot variant="orange" />
           </h2>
         </div>
 
