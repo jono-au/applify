@@ -19,7 +19,7 @@ export default function Page() {
       <Hero />
       <Services />
       <Portfolio />
-      <ImageBreak imageSrc="/images/image-break.webp" />
+      <ImageBreak imageSrc="/images/applify-office.webp" />
       <SupportCareSection />
       <CTABanner />
       <Footer />

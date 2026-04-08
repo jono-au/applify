@@ -24,7 +24,7 @@ export default function AboutPage() {
 
       <AboutIntro />
       <WhyApplify />
-      <ImageBreak imageSrc="/images/image-break.webp" />
+      <ImageBreak imageSrc="/images/cbd-min.webp" />
       <TeamSection
         members={[
           {
