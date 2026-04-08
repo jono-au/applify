@@ -104,10 +104,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-white/90 backdrop-blur transition-all duration-300 ${
-        scrolled
-          ? "border-b border-black/5 shadow-[0_6px_24px_rgba(0,0,0,0.06)]"
-          : ""
+      className={`sticky top-0 z-[200] isolate bg-white/90 backdrop-blur transition-all duration-300 ${
+        scrolled ? "shadow-[0_6px_24px_rgba(0,0,0,0.06)]" : ""
       }`}
     >
       <Container>
@@ -149,7 +147,7 @@ export default function Navbar() {
                     href={item.href}
                     ref={(el) => setItemRef(item.href, el)}
                     aria-current={active ? "page" : undefined}
-                    className="relative z-1000 inline-block px-[2px] py-0 text-base font-semibold leading-none text-black transition-colors duration-200 lg:text-xl"
+                    className="relative z-10 inline-block px-[2px] py-0 text-base font-semibold leading-none text-black transition-colors duration-200 lg:text-xl"
                   >
                     {item.label}
                   </Link>
@@ -189,7 +187,7 @@ export default function Navbar() {
 
         <div
           id="mobile-menu"
-          className={`overflow-hidden transition-all duration-300 ease-out md:hidden ${
+          className={`overflow-hidden z-[200] isolate transition-all duration-300 ease-out md:hidden ${
             mobileOpen ? "max-h-96 pb-5 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
