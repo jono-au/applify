@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
+import Dot from "@/components/ui/Dot";
 
 type TeamMember = {
   name: string;
@@ -21,6 +22,7 @@ export default function TeamSection({ members }: TeamSectionProps) {
 
           <h2 className="heading-h2 max-w-[600px] mx-auto">
             I love working with great people
+            <Dot variant="orange" />
           </h2>
         </div>
 

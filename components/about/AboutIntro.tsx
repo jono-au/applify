@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
+import Dot from "@/components/ui/Dot";
 
 type AboutIntroProps = {
   eyebrow?: string;
-  title?: string;
   description?: string;
   secondaryDescription?: string;
   imageSrc?: string;
@@ -12,7 +12,6 @@ type AboutIntroProps = {
 
 export default function AboutIntro({
   eyebrow = "Who We Are",
-  title = "Helping Australian businesses connect with and serve more customers online.",
   description = "We build custom websites and digital solutions designed to support long term growth. Every project is led by a senior developer, with clear communication and practical thinking from start to finish.",
   secondaryDescription = "Whether it's improving your online presence, refining the user journey, or building custom functionality, we focus on solutions that work in the real world.",
   imageSrc = "/images/about/about.jpeg",
@@ -40,7 +39,11 @@ export default function AboutIntro({
           <div className="order-2 max-w-[760px]">
             <p className="eyebrow">{eyebrow}</p>
 
-            <h2 className="heading-h2">{title}</h2>
+            <h2 className="heading-h2">
+              Helping Australian businesses connect with and serve more
+              customers online
+              <Dot variant="maroon" />
+            </h2>
 
             <div className="mt-8 space-y-5 text-body">
               <p>{description}</p>

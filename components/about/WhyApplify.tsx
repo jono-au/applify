@@ -1,5 +1,6 @@
 import Container from "@/components/ui/Container";
 import { whyApplifyPillars } from "@/data/whyApplify";
+import Dot from "@/components/ui/Dot";
 
 export default function WhyApplify() {
   return (
@@ -9,7 +10,10 @@ export default function WhyApplify() {
           <p className="eyebrow">Why Applify</p>
 
           <h2 className="heading-h2">
-            Strategy, execution and performance. Done right.
+            Strategy, execution and performance
+            <Dot variant="amber" />
+            &nbsp;Done right
+            <Dot variant="orange" />
           </h2>
         </div>
 

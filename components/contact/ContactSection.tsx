@@ -1,7 +1,8 @@
 "use client";
 
-import { ArrowUpRight, Mail, MapPin, Phone, LucideProps } from "lucide-react";
+import { Mail, MapPin, Phone, LucideProps } from "lucide-react";
 import CTAButton from "../ui/CtaButton";
+import Dot from "@/components/ui/Dot";
 
 type ContactItem = {
   icon: React.ComponentType<LucideProps>;
@@ -60,7 +61,10 @@ export default function ContactSection() {
 
         <div>
           <div className="max-w-[980px]">
-            <h2 className="heading-h2">Send us a Message</h2>
+            <h2 className="heading-h2">
+              Send us a message
+              <Dot variant="orange" />
+            </h2>
 
             <form className="mt-8 md:mt-10">
               <div className="grid gap-x-8 gap-y-7 md:grid-cols-2 md:gap-x-10 md:gap-y-8">
