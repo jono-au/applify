@@ -30,8 +30,9 @@ export default function AboutPage() {
           {
             name: "Jonathan Chan",
             role: "Senior Consultant & Developer",
-            imageSrc: "/images/about/team-jonathan.jpg",
-            imageAlt: "Jonathan Chan portrait",
+            imageSrc: "/images/about/jonathan.webp",
+            imageAlt:
+              "Portrait of founder Jonathan senior consultant and developer at Applify",
           },
         ]}
       />
