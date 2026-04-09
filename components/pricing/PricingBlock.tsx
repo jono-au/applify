@@ -5,6 +5,8 @@ import Container from "@/components/ui/Container";
 import CTAButton from "../ui/CtaButton";
 import Dot from "@/components/ui/Dot";
 
+type DotVariant = "maroon" | "orange" | "teal" | "amber";
+
 type PricingBlockProps = {
   eyebrow: string;
   heading: string;
@@ -16,7 +18,7 @@ type PricingBlockProps = {
   imageAlt: string;
   reverse?: boolean;
   muted?: boolean;
-  dotVariant?: "orange" | "amber" | "teal" | "maroon";
+  dotVariant?: DotVariant;
   showDot?: boolean;
 };
 
