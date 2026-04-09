@@ -15,8 +15,7 @@ export default function PricingPage() {
     <>
       <InternalPageHero
         title="Simple Pricing"
-        highlightText="Simple"
-        description="Clear pricing for website builds, renovations, and ongoing care. No hidden costs."
+        description="Clear pricing for website builds, renovations and ongoing care."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Pricing" }]}
       />
       <PricingSections />
