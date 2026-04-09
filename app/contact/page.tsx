@@ -15,7 +15,6 @@ export default function ContactPage() {
     <>
       <InternalPageHero
         title="Contact Us"
-        highlightText="Contact"
         description="Let's talk about your next innovative digital project together."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
