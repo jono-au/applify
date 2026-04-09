@@ -37,20 +37,6 @@ export default function SupportCareCard({
     >
       <div className="flex h-full flex-col">
         <div className="mb-6 flex items-center gap-4">
-          <div
-            className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${
-              isTeal
-                ? "bg-gradient-to-br from-[#0ca2a6]/15 to-[#008486]/20 text-[#008486]"
-                : "bg-gradient-to-br from-[#ffb846]/20 to-[#ff5a00]/10 text-[#ff9a00]"
-            }`}
-          >
-            {isTeal ? (
-              <span className="inline-flex h-6 w-6 rounded-full border-[3px] border-current" />
-            ) : (
-              <span className="inline-flex h-6 w-6 rounded-xl border-[3px] border-current" />
-            )}
-          </div>
-
           <div>
             <p className="mb-1 text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
               {eyebrow}
