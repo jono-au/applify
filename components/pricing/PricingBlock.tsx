@@ -1,25 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
 import clsx from "clsx";
 import Container from "@/components/ui/Container";
 import CTAButton from "../ui/CtaButton";
 import Dot from "@/components/ui/Dot";
+import { PricingItem } from "@/data/pricingData";
 
-type DotVariant = "maroon" | "orange" | "teal" | "amber";
-
-type PricingBlockProps = {
-  eyebrow: string;
-  heading: string;
-  title: string;
-  description: string;
-  price: string;
-  features: string[];
-  image: string;
-  imageAlt: string;
+type PricingBlockProps = PricingItem & {
   reverse?: boolean;
   muted?: boolean;
-  dotVariant?: DotVariant;
-  showDot?: boolean;
 };
 
 export default function PricingBlock({

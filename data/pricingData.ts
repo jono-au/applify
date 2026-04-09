@@ -1,4 +1,19 @@
-export const pricingItems = [
+export type DotVariant = "maroon" | "orange" | "teal" | "amber";
+
+export type PricingItem = {
+  eyebrow: string;
+  heading: string;
+  price: string;
+  title: string;
+  description: string;
+  features: string[];
+  image: string;
+  imageAlt: string;
+  dotVariant?: DotVariant;
+  showDot?: boolean;
+};
+
+export const pricingItems: PricingItem[] = [
   {
     eyebrow: "No Agency Nonsense",
     heading: "Website builds & renovations for growing businesses",
@@ -18,8 +33,6 @@ export const pricingItems = [
     showDot: true,
     image: "/images/pricing/fix-scope.webp",
     imageAlt: "Website homepage design on a desktop monitor",
-    icon: "/images/pricing/world-wide-web.png",
-    iconAlt: "Website design icon",
   },
   {
     eyebrow: "Ongoing & Adhoc Work",
@@ -39,8 +52,6 @@ export const pricingItems = [
     showDot: false,
     image: "/images/pricing/fixes.webp",
     imageAlt: "Developer working on a laptop with code on the screen",
-    icon: "/images/pricing/fix.png",
-    iconAlt: "Support and tools icon",
   },
   {
     eyebrow: "Essential Care",
@@ -61,7 +72,5 @@ export const pricingItems = [
     showDot: true,
     image: "/images/pricing/essential-care.webp",
     imageAlt: "Dashboard showing website performance and security monitoring",
-    icon: "/images/pricing/fix.png",
-    iconAlt: "Website care icon",
   },
 ];
