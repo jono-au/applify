@@ -23,7 +23,7 @@ export default function InternalPageHero({
   return (
     <section className="relative overflow-hidden">
       <Container>
-        <div className="relative grid min-h-[420px] items-center gap-12 py-16 md:min-h-[520px] md:grid-cols-[1.05fr_0.95fr] md:py-20 lg:min-h-[620px] lg:py-24">
+        <div className="relative grid min-h-[320px] items-center gap-12 py-16 md:min-h-[520px] md:grid-cols-[1.05fr_0.95fr] md:py-20 lg:min-h-[620px] lg:py-24">
           <motion.div
             className="relative z-10 max-w-[760px] pr-10 sm:pr-16 md:pr-0"
             initial={{ opacity: 0, y: 26 }}

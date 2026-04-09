@@ -11,8 +11,7 @@ export default function WhyApplify() {
 
           <h2 className="heading-h2">
             Strategy, execution and performance
-            <Dot variant="amber" />
-            &nbsp;Done right
+            <Dot variant="amber" /> Done right
             <Dot variant="orange" />
           </h2>
         </div>
