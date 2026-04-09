@@ -46,7 +46,7 @@ export default function ContactSection() {
                 key={item.title}
                 className="grid grid-cols-[56px_1fr] gap-5 md:grid-cols-[64px_1fr] md:gap-6"
               >
-                <div className="flex h-14 w-14 items-start justify-center rounded-full border border-black/10 bg-white/60 pt-3 shadow-[0_8px_24px_rgba(0,0,0,0.04)] md:h-16 md:w-16">
+                <div className="flex h-14 w-14 items-start justify-center rounded-full border border-black/10 bg-white/60 pt-3 shadow-[0_8px_24px_rgba(0,0,0,0.04)] md:h-14 md:w-14">
                   <Icon className="h-7 w-7 text-[#0f0f10]" strokeWidth={1.8} />
                 </div>
 
