@@ -45,7 +45,7 @@ export const pricingItems = [
   {
     eyebrow: "Essential Care",
     heading: "Keep your website running smoothly",
-    price: "$85/month ex GST",
+    price: "$99/month ex GST",
     title: "Ongoing care. Reliable, secure, and stress-free.",
     description:
       "Ongoing care for businesses that want peace of mind. We handle updates, monitoring, backups, and support so your website stays secure, stable, and performing at its best.",
