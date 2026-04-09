@@ -27,7 +27,7 @@ export const whyApplifyPillars = [
   {
     title: "User First Thinking",
     description:
-      "Everything we build is easy to use, clear and focused on real business outcomes. Built for real users, with your business in mind.",
+      "Everything we build is easy to use, clear and focused on real business outcomes. Built for real users with your business in mind.",
     Icon: UserRoundSearch,
   },
 ] as const;

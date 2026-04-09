@@ -12,7 +12,7 @@ export const supportPlans = [
     title: "Ad-hoc Support",
     eyebrow: "Help when you need it",
     description:
-      "Fast and reliable help for any project. Perfect for fixes, improvements, and on demand work.",
+      "Fast and reliable help for any project. Perfect for fixes, improvements and on demand work.",
     features: [
       {
         icon: Wrench,

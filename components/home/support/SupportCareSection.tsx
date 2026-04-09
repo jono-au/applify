@@ -17,7 +17,7 @@ export default function SupportCareSection() {
           </h2>
 
           <p className="mt-8 max-w-[62ch] text-body">
-            Keep your website secure, updated, and performing at its best with
+            Keep your website secure, updated and performing at its best with
             fast, reliable support. We handle the technical side so you can
             focus on running your business.
           </p>

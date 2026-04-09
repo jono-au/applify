@@ -49,7 +49,7 @@ export const servicesSplit: ServiceItem[] = [
   {
     title: "Custom Websites",
     description:
-      "We design and build high-performing websites that are as functional as they are visually compelling. Whether you need a sleek marketing site or a more tailored digital platform, we combine thoughtful design with clean, scalable code.",
+      "We design and build high-performing websites that are as functional as they are visually compelling. Whether you need a sleek marketing site or a more tailored digital platform, we combine thoughtful design with clean scalable code.",
     imageSrc: "/images/services/custom-websites.webp",
     imageAlt:
       "A mobile website mockup showing a custom designed website on a smartphone screen",
@@ -107,7 +107,7 @@ export const servicesSplit: ServiceItem[] = [
   {
     title: "Essential Care",
     description:
-      "Ongoing maintenance and support to keep your website running smoothly behind the scenes. We manage updates and monitor performance so your site stays reliable, secure, and always ready to support your business.",
+      "Ongoing maintenance and support to keep your website running smoothly behind the scenes. We manage updates and monitor performance so your site stays reliable, secure and always ready to support your business.",
     imageSrc: "/images/services/care.webp",
     imageAlt:
       "Google lighthouse performance report showing high scores across all categories indicating a well optimised website",
@@ -136,7 +136,7 @@ export const servicesSplit: ServiceItem[] = [
   {
     title: "White Label Partnerships",
     description:
-      "Scale your agency without increasing overhead. We handle the technical delivery behind the scenes so you can focus on clients, sales, and growth.",
+      "Scale your agency without increasing overhead. We handle the technical delivery behind the scenes so you can focus on clients, sales and growth.",
     imageSrc: "/images/services/partnerships.webp",
     imageAlt:
       "Male and female professional sitting down together at a desk reviewing a website.",

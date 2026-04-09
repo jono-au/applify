@@ -5,7 +5,7 @@ export const pricingItems = [
     price: "Starting from $3500",
     title: "Fixed scope. Delivered by a senior developer.",
     description:
-      "Built properly from the start or rebuilt where it matters most. We focus on structure, performance, and conversion so your website actually supports your growth. Clear scope. Clean execution. No wasted time.",
+      "Built properly from the start or rebuilt where it matters most. We focus on structure, performance and conversion so your website actually supports your growth. Clear scope. Clean execution. No wasted time.",
     features: [
       "Full website builds or targeted renovations",
       "Shopify migrations & integrations",
@@ -27,7 +27,7 @@ export const pricingItems = [
     price: "$90/hour ex GST",
     title: "Flexible support. Pay only for what you need.",
     description:
-      "For businesses that don't need a full rebuild. Get direct access to a senior developer for updates, fixes, and improvements as you need them.",
+      "For businesses that don't need a full rebuild. Get direct access to a senior developer for updates, fixes and improvements as you need them.",
     features: [
       "Landing pages & small builds",
       "Content updates & page edits",
@@ -46,9 +46,9 @@ export const pricingItems = [
     eyebrow: "Essential Care",
     heading: "Keep your website running smoothly",
     price: "$99/month ex GST",
-    title: "Ongoing care. Reliable, secure, and stress-free.",
+    title: "Ongoing care. Reliable, secure and stress-free.",
     description:
-      "Ongoing care for businesses that want peace of mind. We handle updates, monitoring, backups, and support so your website stays secure, stable, and performing at its best.",
+      "Ongoing care for businesses that want peace of mind. We handle updates, monitoring, backups and support so your website stays secure, stable and performing at its best.",
     features: [
       "Managed hosting",
       "Core, theme and plugin updates",
