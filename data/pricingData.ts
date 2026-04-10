@@ -27,7 +27,7 @@ export const pricingItems: PricingItem[] = [
       "WordPress redesigns & rebuilds",
       "UX, structure & conversion improvements",
       "Speed, performance & technical optimisation",
-      "Cleanup of bloated themes, plugins or code",
+      "Clean up of bloated themes, plugins or code",
     ],
     dotVariant: "maroon",
     showDot: true,
@@ -61,7 +61,7 @@ export const pricingItems: PricingItem[] = [
     description:
       "Ongoing care for businesses that want peace of mind. We handle updates, monitoring, backups and support so your website stays secure, stable and performing at its best.",
     features: [
-      "Managed hosting",
+      "Optimised hosting",
       "Core, theme and plugin updates",
       "Security monitoring",
       "Daily backups",
