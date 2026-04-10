@@ -15,10 +15,8 @@ const navItems = [
 ];
 
 type HighlightState = {
-  left: number;
+  x: number;
   width: number;
-  top: number;
-  height: number;
   opacity: number;
 };
 
@@ -27,10 +25,8 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [highlight, setHighlight] = useState<HighlightState>({
-    left: 0,
+    x: 0,
     width: 0,
-    top: 0,
-    height: 0,
     opacity: 0,
   });
 
@@ -58,7 +54,6 @@ export default function Navbar() {
     }
 
     const activeItem = itemRefs.current[activeHref];
-
     if (!activeItem) {
       setHighlight((prev) => ({ ...prev, opacity: 0 }));
       return;
@@ -68,10 +63,8 @@ export default function Navbar() {
     const itemRect = activeItem.getBoundingClientRect();
 
     setHighlight({
-      left: itemRect.left - navRect.left,
+      x: itemRect.left - navRect.left,
       width: itemRect.width,
-      top: itemRect.top - navRect.top,
-      height: itemRect.height,
       opacity: 1,
     });
   };
@@ -104,7 +97,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-[200] isolate bg-white/90 backdrop-blur transition-all duration-300 ${
+      className={`sticky top-0 z-[999] bg-white/75 backdrop-blur-md supports-[backdrop-filter]:bg-white/70 transition-shadow duration-300 ${
         scrolled ? "shadow-[0_6px_24px_rgba(0,0,0,0.06)]" : ""
       }`}
     >
@@ -128,13 +121,11 @@ export default function Navbar() {
             >
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute z-0 rounded-[3px] bg-applify-amber/90 transition-all duration-300 ease-out"
+                className="pointer-events-none absolute left-0 top-[56%] z-0 h-[40%] rounded-[3px] bg-applify-amber/90 transition-[transform,width,opacity] duration-300 ease-out will-change-transform"
                 style={{
-                  left: `${highlight.left}px`,
                   width: `${highlight.width}px`,
-                  top: `${highlight.top + highlight.height * 0.56}px`,
-                  height: `${highlight.height * 0.4}px`,
                   opacity: highlight.opacity,
+                  transform: `translate3d(${highlight.x}px, 0, 0)`,
                 }}
               />
 
@@ -187,7 +178,7 @@ export default function Navbar() {
 
         <div
           id="mobile-menu"
-          className={`overflow-hidden z-[200] isolate transition-all duration-300 ease-out md:hidden ${
+          className={`overflow-hidden transition-all duration-300 ease-out md:hidden ${
             mobileOpen ? "max-h-96 pb-5 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
