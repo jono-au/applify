@@ -97,7 +97,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-[999] bg-white/75 backdrop-blur-md supports-[backdrop-filter]:bg-white/70 transition-shadow duration-300 ${
+      className={`sticky top-0 z-[999] bg-white/90 backdrop-blur-md supports-[backdrop-filter]:bg-white/90 transition-shadow duration-300 ${
         scrolled ? "shadow-[0_6px_24px_rgba(0,0,0,0.06)]" : ""
       }`}
     >
