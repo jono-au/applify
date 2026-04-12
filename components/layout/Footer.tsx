@@ -68,9 +68,12 @@ export default function Footer() {
 
         <div className="mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           {/* NAV */}
-          <nav className="flex flex-wrap items-center gap-3 text-sm font-medium text-white/90">
+          <nav className="flex flex-wrap items-center gap-2 md:gap-3 text-sm font-medium text-white/90">
             {footerNav.map((item, i) => (
-              <div key={item.label} className="flex items-center gap-3">
+              <div
+                key={item.label}
+                className="flex items-center gap-2 md:gap-3"
+              >
                 <Link href={item.href} className="hover:opacity-70 transition">
                   {item.label}
                 </Link>

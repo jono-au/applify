@@ -49,7 +49,7 @@ export default function ImageBreak({ imageSrc }: Props) {
           src={imageSrc}
           alt="Team working"
           fill
-          className="object-cover"
+          className="object-cover object-right md:object-center"
           sizes="100vw"
         />
       </div>
