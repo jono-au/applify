@@ -54,6 +54,10 @@
   @apply text-base text-neutral-700 md:text-lg;
 }
 
+@utility rounded-corners {
+  @apply rounded-3xl md:rounded-4xl;
+}
+
 body {
   background-color: var(--background, #ffffff);
   color: var(--foreground);

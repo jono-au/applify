@@ -48,7 +48,7 @@ export default function Services() {
             <Link
               key={service.title}
               href={service.href}
-              className="group block rounded-[1.75rem] border border-black/[0.03] bg-white shadow-[0_10px_35px_rgba(0,0,0,0.045)] transition-all duration-300 md:hover:-translate-y-[4px] md:hover:bg-[#f5f3ef] md:hover:shadow-[white] active:scale-[0.985] active:bg-gray-100 active:shadow-[0_6px_18px_rgba(0,0,0,0.08)] active:transition-none"
+              className="group block rounded-corners border border-black/[0.03] bg-white shadow-[0_10px_35px_rgba(0,0,0,0.045)] transition-all duration-300 md:hover:-translate-y-[4px] md:hover:bg-[#f5f3ef] md:hover:shadow-[white] active:scale-[0.985] active:bg-gray-100 active:shadow-[0_6px_18px_rgba(0,0,0,0.08)] active:transition-none"
             >
               <div className="grid gap-5 px-5 py-6 sm:px-6 md:grid-cols-[72px_minmax(0,1fr)_72px] md:items-center md:gap-6 md:px-8 md:py-7 lg:px-10">
                 <div className="flex items-center justify-between md:block">

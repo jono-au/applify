@@ -103,7 +103,7 @@ export default function PricingBlock({
             <div
               className={clsx("order-1", reverse ? "lg:order-1" : "lg:order-2")}
             >
-              <div className="relative overflow-hidden rounded-[28px]">
+              <div className="relative overflow-hidden rounded-corners">
                 <Image
                   src={image}
                   alt={imageAlt}

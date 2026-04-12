@@ -37,7 +37,7 @@ export default function ServiceSplitBlock({
     <section className={clsx("relative", className)}>
       <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16 xl:gap-20">
         <div className={clsx("order-2", reverse ? "lg:order-2" : "lg:order-1")}>
-          <div className="relative overflow-hidden rounded-[28px] sm:rounded-[32px]">
+          <div className="relative overflow-hidden rounded-corners">
             <Image
               src={imageSrc}
               alt={imageAlt}

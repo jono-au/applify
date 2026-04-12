@@ -20,7 +20,7 @@ export default function WhyApplify() {
           {whyApplifyPillars.map(({ title, description, Icon }) => (
             <article
               key={title}
-              className="group h-full rounded-[2rem] bg-white p-7 shadow-[0_18px_50px_rgba(15,15,16,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,15,16,0.08)] sm:p-8"
+              className="group h-full rounded-corners bg-white p-7 shadow-[0_18px_50px_rgba(15,15,16,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,15,16,0.08)] sm:p-8"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[#0f0f10]/8 bg-[#f8f8f6]">
                 <Icon className="h-7 w-7 text-[#0f0f10]" strokeWidth={1.8} />

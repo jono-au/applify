@@ -31,7 +31,7 @@ export default function SupportCareCard({
   return (
     <article
       className="
-        h-full rounded-[32px] border border-black/5 bg-white/90 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+        h-full rounded-corners border border-black/5 bg-white/90 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.08)]
         backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_80px_rgba(0,0,0,0.12)]
       "
     >

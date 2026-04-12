@@ -22,7 +22,7 @@ export default function AboutIntro({
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-16 xl:gap-20">
           <div className="order-1">
-            <div className="relative overflow-hidden rounded-[2rem] bg-white shadow-[0_20px_70px_rgba(15,15,16,0.08)]">
+            <div className="relative overflow-hidden rounded-corners bg-white shadow-[0_20px_70px_rgba(15,15,16,0.08)]">
               <div className="relative aspect-[4/4.2] w-full">
                 <Image
                   src={imageSrc}

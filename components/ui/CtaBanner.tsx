@@ -15,7 +15,7 @@ export default function CTABanner() {
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
       <div className="mx-auto w-full max-w-[1400px] px-6">
-        <div className="relative overflow-hidden rounded-[32px] px-8 py-14 sm:px-12 lg:px-16 lg:py-16 shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
+        <div className="relative overflow-hidden rounded-corners px-8 py-14 sm:px-12 lg:px-16 lg:py-16 shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
           <div className="absolute inset-0 bg-gradient-to-r from-[#ffb846] via-[#ff9a3d] to-[#ff5a00]" />
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
           <div className="relative z-10 flex flex-col items-center text-center">

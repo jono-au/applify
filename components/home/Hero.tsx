@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section className="pt-4 pb-10 md:pt-6 md:pb-14">
       <Container size="wide">
-        <div className="relative overflow-hidden rounded-[2.5rem]">
+        <div className="relative overflow-hidden rounded-corners">
           {/* Background Image */}
           <Image
             src="/images/hero.webp"

@@ -29,7 +29,7 @@ export default function PortfolioCard({
       {/* <Link href={href} className="block focus:outline-none"> */}
       <div
         className={cn(
-          "relative w-full overflow-hidden rounded-[2rem] bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition duration-300 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_18px_45px_rgba(0,0,0,0.10)]",
+          "relative w-full overflow-hidden rounded-corners bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition duration-300 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_18px_45px_rgba(0,0,0,0.10)]",
           "aspect-[1.08/0.88]",
           imageClassName,
         )}
