@@ -30,19 +30,19 @@ export const servicesSplit: ServiceItem[] = [
     features: [
       {
         text: "UX & conversion improvements",
-        dotClassName: "bg-[#ff5a00]",
+        dotClassName: "bg-[#ffb846]",
       },
       {
         text: "Page structure & content flow",
-        dotClassName: "bg-[#ff5a00]",
+        dotClassName: "bg-[#ffb846]",
       },
       {
         text: "Speed & core web vitals",
-        dotClassName: "bg-[#ff5a00]",
+        dotClassName: "bg-[#ffb846]",
       },
       {
         text: "Technical cleanup & code optimisation",
-        dotClassName: "bg-[#ff5a00]",
+        dotClassName: "bg-[#ffb846]",
       },
     ],
   },
@@ -117,19 +117,19 @@ export const servicesSplit: ServiceItem[] = [
     features: [
       {
         text: "Hosting, updates & technical maintenance",
-        dotClassName: "bg-[#008486]",
+        dotClassName: "bg-[#0ca2a6]",
       },
       {
         text: "Security monitoring & daily backups",
-        dotClassName: "bg-[#008486]",
+        dotClassName: "bg-[#0ca2a6]",
       },
       {
         text: "Uptime monitoring & performance checks",
-        dotClassName: "bg-[#008486]",
+        dotClassName: "bg-[#0ca2a6]",
       },
       {
         text: "Priority support when you need it",
-        dotClassName: "bg-[#008486]",
+        dotClassName: "bg-[#0ca2a6]",
       },
     ],
   },

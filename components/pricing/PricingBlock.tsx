@@ -76,7 +76,7 @@ export default function PricingBlock({
                         key={feature}
                         className="flex items-start gap-3 list-items"
                       >
-                        <span className="mt-[9px] pr-[8px] h-2 w-2 rounded-full bg-[#ff8a00]" />
+                        <span className="mt-[9px] pr-[8px] h-2 w-2 rounded-full bg-[#ffb846]" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -125,7 +125,7 @@ export default function PricingBlock({
                     key={feature}
                     className="flex items-start gap-3 list-items"
                   >
-                    <span className="mt-[9px] h-2 w-2 rounded-full bg-[#ff8a00]" />
+                    <span className="mt-[9px] h-2 w-2 rounded-full bg-[#ffb846]" />
                     <span>{feature}</span>
                   </li>
                 ))}
