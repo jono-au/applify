@@ -18,7 +18,7 @@ export default function TeamSection({ members }: TeamSectionProps) {
     <section className="py-20 sm:py-24 lg:py-28">
       <Container>
         <div className="mx-auto text-center">
-          <p className="eyebrow">Nice to meet you</p>
+          <p className="eyebrow">Hi I'm Jono</p>
 
           <h2 className="heading-h2 max-w-[600px] mx-auto">
             I love working with great people
